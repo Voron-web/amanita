@@ -1,0 +1,7 @@
+@import "res";
+@import "mixin"; //@include font(ff, filename, fw);
+
+@include font(Unbounded, Unbounded-Medium, 500);
+@include font(SF UI Display, SFUIDisplay-Regular, 400);
+@include font(SF UI Display, SFUIDisplay-Medium, 500);
+@include font(Lato, Lato-Bold, 600);
