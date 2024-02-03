@@ -1,0 +1,36 @@
+.move-slider__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.move-slider__container img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.move-slider__control {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  z-index: 3;
+}
+.move-slider__control-item {
+  height: 100%;
+}
+.move-slider__indicator {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+.move-slider__indicator-item {
+  height: 1px;
+  background: #dde0ed;
+}
+.move-slider__indicator-item.active {
+  background: #ee2d45;
+}/*# sourceMappingURL=move-slider.css.map */
