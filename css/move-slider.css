@@ -19,17 +19,20 @@
   height: 100%;
 }
 .move-slider__indicator {
+  padding: 0 16px;
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   z-index: 2;
   display: flex;
-  justify-content: space-between;
+  justify-content: stretch;
+  gap: 2px;
 }
 .move-slider__indicator-item {
   height: 1px;
   background: #dde0ed;
+  flex: 1 0 auto;
 }
 .move-slider__indicator-item.active {
   background: #ee2d45;

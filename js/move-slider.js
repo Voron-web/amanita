@@ -53,7 +53,7 @@ class MoveSliderItem {
             if (index == 0) {
                 item.classList.add('active')
             }
-            item.style.width = `${blockWidth / Array.from(this.imageArr).length - 2}px`
+            // item.style.width = `${blockWidth / Array.from(this.imageArr).length - 2}px`
             this.indaicatorBlock.insertAdjacentElement('beforeend', item)
             this.indaicatorBlockArr.push(item)
         }

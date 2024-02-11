@@ -38,3 +38,23 @@ function openSearchPanel() {
 function closeSearchPanel() {
     searchPanel.classList.remove('active')
 }
+
+
+
+/*******************************modal********************************/
+if (document.querySelector('.modal')) {
+    const modal = document.querySelector('.modal')
+    const supportBtn = document.querySelector('.support__btn')
+
+    supportBtn.addEventListener('click', () => {
+        modal.classList.add('active')
+        modal.addEventListener('click', checkModalClick)
+    })
+
+    function checkModalClick(event) {
+        if (!event.target.closest('.modal__window')) {
+            modal.classList.remove('active')
+            modal.removeEventListener('click', checkModalClick)
+        }
+    }
+}
