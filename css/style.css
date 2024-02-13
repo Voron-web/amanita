@@ -187,6 +187,9 @@ body {
 .subtitle {
   margin-top: 48px;
 }
+.subtitle_text {
+  margin-top: 24px;
+}
 
 .section {
   padding: 60px 0;
@@ -630,6 +633,12 @@ body {
 
 .advantages__title {
   text-align: center;
+}
+.advantages__title_about {
+  text-align: start;
+}
+.advantages__text-block p {
+  margin-bottom: 16px;
 }
 .advantages__content {
   margin-top: 48px;
@@ -1709,6 +1718,112 @@ body {
   line-height: 130%;
 }
 
+.nav-line {
+  margin-top: 30px;
+}
+.nav-line__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-line__item a {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+.nav-line__item a::after {
+  content: ">";
+  margin: 0 14px;
+}
+.nav-line__item span {
+  font-size: 14px;
+  color: #ee2d45;
+}
+.about-presentation__content-grid {
+  display: flex;
+  gap: 20px;
+}
+.about-presentation__text-block p {
+  margin-bottom: 16px;
+}
+.about-presentation__text-block ul {
+  margin-top: 24px;
+}
+.about-presentation__text-block li {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.about-presentation__text-block li svg {
+  align-self: start;
+  flex: 0 0 24px;
+  width: 24px;
+}
+.about-presentation__img {
+  flex: 0 0 490px;
+  overflow: hidden;
+}
+.about-presentation__img img {
+  border-radius: 16px;
+  width: 100%;
+}
+
+.team__wrapper {
+  display: flex;
+  gap: 57px;
+}
+.team__content {
+  flex: 0 0 40%;
+}
+.team__btn {
+  margin-top: 24px;
+  height: 60px;
+  width: 210px;
+}
+.team__grid-wrapper {
+  flex: 1 1 auto;
+}
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 32px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.team__grid-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.team__grid-item:nth-child(2) img, .team__grid-item:nth-child(3) img, .team__grid-item:nth-child(6) img {
+  transform: translate(0, -10%);
+}
+.team__grid-item:nth-child(4) img {
+  width: auto;
+  transform: translate(-33%, -20%);
+  height: 180%;
+}
+.team__grid-ava {
+  height: 72px;
+  width: 72px;
+  flex: 0 0 72px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.team__grid-ava img {
+  width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team__grid-name {
+  line-height: 126%;
+}
+.team__grid-post {
+  font-size: 14px;
+  line-height: 180%;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+
 @media (max-width: 1400px) {
   .slider__btn-prev {
     left: 5px;
@@ -1802,6 +1917,9 @@ body {
   }
   .footer__content-section_contact {
     display: none;
+  }
+  .about-presentation__img {
+    flex: 0 0 350px;
   }
 }
 @media (max-width: 950px) {
@@ -1897,6 +2015,20 @@ body {
     margin: 30px auto 0;
     position: static;
     transform: none;
+  }
+  .team__grid-item {
+    gap: 10px;
+  }
+  .team__grid-ava {
+    height: 63px;
+    width: 63px;
+    flex: 0 0 63px;
+  }
+  .team__grid-name {
+    font-size: 14px;
+  }
+  .team__grid-post {
+    font-size: 12px;
   }
 }
 @media (max-width: 850px) {
@@ -2093,6 +2225,12 @@ body {
   .footer__social_taplink svg {
     height: 75%;
   }
+  .about-presentation__content-grid {
+    flex-direction: column;
+  }
+  .about-presentation__img {
+    flex: 0 0 auto;
+  }
 }
 @media (max-width: 750px) {
   .procedure__wrapper {
@@ -2129,6 +2267,22 @@ body {
     height: 50px;
     font-size: 15px;
   }
+  .team__wrapper {
+    flex-direction: column;
+  }
+  .team__btn {
+    height: 50px;
+    margin: 24px auto 0;
+  }
+  .team__grid {
+    min-width: 500px;
+  }
+  .team__grid-wrapper {
+    padding-bottom: 10px;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
 }
 @media (max-width: 650px) {
   .section {
@@ -2136,6 +2290,9 @@ body {
   }
   .subtitle {
     margin-top: 20px;
+  }
+  .subtitle_text {
+    margin-top: 21px;
   }
   .advantages__text {
     font-size: 11px;
@@ -2281,6 +2438,23 @@ body {
     margin-top: 8px;
     height: 32px;
     font-size: 8px;
+  }
+  .nav-line {
+    margin-top: 10px;
+  }
+  .nav-line__item a::after {
+    margin: 0 10px;
+  }
+  .about-presentation__text-block ul {
+    margin-top: 21px;
+  }
+  .about-presentation__text-block li {
+    gap: 12px;
+  }
+  .about-presentation__text-block li svg {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
   }
 }
 @media (max-width: 600px) {
