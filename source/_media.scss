@@ -71,6 +71,9 @@
     }
     .title {
         font-size: 22px;
+        &_small {
+            font-size: 20px;
+        }
     }
     .text {
         font-size: 14px;
@@ -84,6 +87,14 @@
     .about {
         &__btn {
             transform: translate(0, -50%);
+        }
+    }
+    .person-banner {
+        &__name {
+            font-size: 18px;
+        }
+        &__phone-text {
+            font-size: 16px;
         }
     }
 }
@@ -126,6 +137,35 @@
     .all-article {
         &__grid {
             gap: 10px;
+        }
+    }
+    .person-banner {
+        &__name {
+            white-space: wrap;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+            height: auto;
+        }
+        &__phone {
+            margin-top: 14px;
+        }
+        &__subtitle {
+            margin-top: 12px;
+        }
+        &__btn {
+            margin-top: 18px;
+            height: 40px;
+        }
+    }
+    .next-articles {
+        &__wrapper {
+            gap: 20px;
+        }
+        &__item-img {
+            flex: 0 0 180px;
+            width: 180px;
         }
     }
 }
@@ -272,6 +312,12 @@
         }
         &__grid-post {
             font-size: 12px;
+        }
+    }
+    .single-article {
+        &__img {
+            width: 40%;
+            flex: 0 0 40%;
         }
     }
 }
@@ -527,6 +573,26 @@
             }
         }
     }
+    .single-article {
+        &__preface {
+            flex-direction: column-reverse;
+        }
+        &__img {
+            width: 100%;
+        }
+    }
+    .next-articles {
+        &__wrapper {
+            flex-direction: column;
+            gap: 40px;
+        }
+        &__item {
+            margin-top: 20px;
+        }
+    }
+    .line {
+        display: none;
+    }
 }
 @media (max-width: 750px) {
     .procedure {
@@ -592,6 +658,21 @@
     .all-article {
         &__grid {
             grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .tags {
+        &__wrapper {
+            flex-direction: column;
+            gap: 30px;
+        }
+        &__block {
+            gap: 10px;
+        }
+
+        &__item {
+            height: 34px;
+            padding: 0 16px;
+            font-size: 11px;
         }
     }
 }
@@ -798,6 +879,21 @@
             }
         }
     }
+    .single-article {
+        &__content {
+            & ul {
+                margin-top: 21px;
+            }
+            & li {
+                gap: 12px;
+                & svg {
+                    width: 16px;
+                    height: 16px;
+                    flex: 0 0 16px;
+                }
+            }
+        }
+    }
 }
 @media (max-width: 600px) {
     .footer {
@@ -941,6 +1037,42 @@
             margin: 24px auto 0;
             width: fit-content;
             height: 50px;
+        }
+    }
+    .person-banner {
+        &__person {
+            margin-right: 0;
+        }
+        &_avatar {
+            flex: 0 0 65px;
+        }
+
+        &__btn-block {
+            width: 100%;
+        }
+
+        &__btn {
+            width: 100%;
+        }
+    }
+    .next-articles {
+        &__item {
+            border-radius: 8px;
+            height: 111px;
+        }
+        &__item-title {
+            margin-top: 0;
+            line-height: 116%;
+        }
+
+        &__item-date,
+        &__item-subtitle {
+            display: none;
+        }
+        &__item-img {
+            flex: 0 0 111px;
+            width: 111px;
+            border-radius: 8px;
         }
     }
 }

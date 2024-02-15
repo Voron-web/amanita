@@ -74,6 +74,12 @@ body {
     &__white {
         color: #fff;
     }
+    &_small {
+        font-family: "Unbounded";
+        color: #000;
+        font-size: 32px;
+        font-weight: 500;
+    }
 }
 .subtitle {
     margin-top: 48px;
@@ -1100,6 +1106,9 @@ body {
     &__title {
         max-width: 370px;
         color: #fff;
+        &_blog {
+            max-width: 520px;
+        }
     }
 
     &__text {
@@ -2143,6 +2152,334 @@ body {
     &__btn {
         height: 60px;
         width: 214px;
+    }
+}
+.single-article {
+    padding-top: 25px;
+    padding-bottom: 0;
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    &__date {
+        padding: 4px 12px;
+        background: #fff;
+        border: 1px solid #dde0ed;
+        border-radius: 30px;
+        font-size: 12px;
+    }
+
+    &__read-time {
+        font-size: 12px;
+        color: #1a8fe9;
+    }
+
+    &__preface {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__content {
+        & li {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            & svg {
+                align-self: start;
+                flex: 0 0 24px;
+                width: 24px;
+            }
+        }
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+
+    &__img {
+        width: 478px;
+        flex: 0 0 478px;
+        overflow: hidden;
+        & img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+    }
+}
+.paragraph {
+    padding-top: 34px;
+
+    &__title {
+    }
+
+    &__content {
+        & p {
+            margin-top: 16px;
+        }
+        & li {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            & svg {
+                align-self: start;
+                flex: 0 0 24px;
+                width: 24px;
+            }
+        }
+    }
+}
+.line {
+    padding-top: 30px;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #dde0ed;
+}
+
+.tags {
+    padding: 30px 0 24px;
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        gap: 90px;
+    }
+
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    &__item {
+        width: fit-content;
+        height: 40px;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: "SF UI Display";
+        border: 1px solid #dde0ed;
+        border-radius: 27px;
+        white-space: nowrap;
+        cursor: pointer;
+        background: #f0f2fc;
+        &:hover {
+            background: #dde0ed;
+        }
+    }
+
+    &__repost {
+    }
+
+    &__repost-title {
+        white-space: nowrap;
+    }
+
+    &__repost-socials {
+        margin-top: 12px;
+        display: flex;
+        gap: 10px;
+        & svg {
+            width: 28px;
+        }
+    }
+}
+.person-banner {
+    &__wrapper {
+        height: 95px;
+        padding: 15px 20px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #dddddd;
+        background: #fff;
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &_avatar {
+        position: relative;
+        height: 65px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        overflow: hidden;
+        & img {
+            height: 110%;
+            position: absolute;
+            top: -10%;
+            left: 50%;
+            transform: translate(-50%, 0) scaleX(-1);
+        }
+    }
+
+    &__person {
+        margin-right: 25px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    &__person-info {
+    }
+
+    &__name {
+        font-family: "Unbounded";
+        padding-right: 25px;
+        position: relative;
+        font-size: 20px;
+        line-height: 92%;
+        letter-spacing: -0.01em;
+        white-space: nowrap;
+
+        & svg {
+            position: absolute;
+            right: 0;
+            top: 40%;
+            transform: translate(0, -50%);
+            height: 100%;
+        }
+    }
+
+    &__description {
+        margin-top: 6px;
+        font-size: 14px;
+        line-height: 92%;
+        letter-spacing: -0.01em;
+        color: #2323238f;
+    }
+
+    &__phone {
+        height: 100%;
+        padding: 0 27px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    &__phone-logo {
+        width: 37px;
+        aspect-ratio: 1/1;
+        border: 1px solid #66666633;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        & img {
+            width: 12px;
+            height: 12px;
+        }
+    }
+    &__subtitle {
+        font-size: 14px;
+        max-width: 350px;
+    }
+
+    &__phone-text {
+        font-weight: 500;
+        font-size: 20px;
+        color: #070f14;
+        white-space: nowrap;
+    }
+
+    &__btn-block {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+
+    &__btn {
+        padding: 20px 22px;
+        border: 2px solid #dddddd;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+}
+.next-articles {
+    padding: 30px 0 70px;
+    &__wrapper {
+        display: flex;
+        gap: 10%;
+    }
+    &__block {
+    }
+
+    &__item {
+        height: 200px;
+        margin-top: 34px;
+        border-radius: 16px;
+        grid-area: "long";
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        overflow: hidden;
+        background: #fff;
+        border: 1px solid #dde0ed;
+    }
+
+    &__title {
+    }
+
+    &__item-img {
+        position: relative;
+        flex: 0 0 225px;
+        width: 225px;
+        height: 100%;
+        overflow: hidden;
+        & img {
+            position: absolute;
+            width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__item-content {
+        height: fit-content;
+        padding: 16px 13px 16px 0;
+    }
+
+    &__item-date {
+        width: fit-content;
+        border: 1px solid #dde0ed;
+        border-radius: 30px;
+        padding: 4px 12px;
+        background: #fff;
+        color: #000;
+        font-size: 12px;
+    }
+
+    &__item-title {
+        margin-top: 13px;
+        font-family: "Unbounded";
+        font-size: 16px;
+        line-height: 130%;
+        max-width: 350px;
+    }
+
+    &__item-subtitle {
+        font-size: 14px;
+        margin-top: 10px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-height: 1.3em;
+        height: 2.6em;
+    }
+
+    &__item-link {
+        display: inline-block;
+        margin-top: 14px;
+        font-size: 14px;
+        color: #1a8fe9;
     }
 }
 
