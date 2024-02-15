@@ -593,6 +593,13 @@
     .line {
         display: none;
     }
+    .order {
+        &__img {
+            & img {
+                left: -20%;
+            }
+        }
+    }
 }
 @media (max-width: 750px) {
     .procedure {
@@ -894,6 +901,33 @@
             }
         }
     }
+    .contacts {
+        &__content {
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__grid {
+            padding: 5px;
+            background: transparent;
+            border: 0;
+        }
+
+        &__map {
+            flex: 0 0 430px;
+        }
+    }
+    .order {
+        &__img {
+            display: none;
+        }
+        &__btn {
+            margin: 30px auto 0;
+            height: 50px;
+        }
+        &__form {
+            border-radius: 16px;
+        }
+    }
 }
 @media (max-width: 600px) {
     .footer {
@@ -1073,6 +1107,19 @@
             flex: 0 0 111px;
             width: 111px;
             border-radius: 8px;
+        }
+    }
+}
+@media (max-width: 450px) {
+    .order {
+        &__form {
+            padding: 20px;
+        }
+        &__input-title {
+            font-size: 14px;
+        }
+        &__btn {
+            width: 100%;
         }
     }
 }
