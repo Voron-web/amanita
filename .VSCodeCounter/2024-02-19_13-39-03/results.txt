@@ -1,0 +1,56 @@
+Date : 2024-02-19 13:39:03
+Directory : /home/voron/Web/Work/Other/Сергей сайты/amanita
+Total : 24 files,  21994 codes, 140 comments, 681 blanks, all 22815 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| HTML       |         10 |     11,867 |          2 |        130 |     11,999 |
+| SCSS       |          5 |      4,877 |         51 |        357 |      5,285 |
+| CSS        |          2 |      4,508 |          0 |         70 |      4,578 |
+| JavaScript |          6 |        499 |         67 |         99 |        665 |
+| PHP        |          1 |        243 |         20 |         25 |        288 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                    | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                       |         24 |     21,994 |        140 |        681 |     22,815 |
+| . (Files)                                                               |         11 |     12,110 |         22 |        155 |     12,287 |
+| css                                                                     |          2 |      4,508 |          0 |         70 |      4,578 |
+| js                                                                      |          6 |        499 |         67 |         99 |        665 |
+| source                                                                  |          5 |      4,877 |         51 |        357 |      5,285 |
++-------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/about.html              | HTML       |        831 |          0 |          7 |        838 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/article.html            | HTML       |      1,044 |          0 |         16 |      1,060 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/blog.html               | HTML       |        681 |          0 |          5 |        686 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/cart.html               | HTML       |        583 |          0 |         12 |        595 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/catalog.html            | HTML       |      2,492 |          0 |         27 |      2,519 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/contacts.html           | HTML       |        672 |          0 |          9 |        681 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/css/move-slider.css     | CSS        |         38 |          0 |          0 |         38 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/css/style.css           | CSS        |      4,470 |          0 |         70 |      4,540 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/delivery.html           | HTML       |        660 |          0 |         13 |        673 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/index.html              | HTML       |      3,393 |          0 |         16 |      3,409 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/js/accordeon.js         | JavaScript |          9 |          0 |          2 |         11 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/js/cart.js              | JavaScript |        122 |          8 |         29 |        159 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/js/catalog.js           | JavaScript |         90 |          0 |         22 |        112 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/js/main.js              | JavaScript |         46 |          1 |         14 |         61 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/js/move-slider.js       | JavaScript |         77 |         28 |         10 |        115 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/js/slider.js            | JavaScript |        155 |         30 |         22 |        207 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/order.html              | HTML       |        841 |          0 |         13 |        854 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/product.html            | HTML       |        670 |          2 |         12 |        684 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/service.php             | PHP        |        243 |         20 |         25 |        288 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/source/_media.scss      | SCSS       |      1,331 |         18 |         34 |      1,383 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/source/_mixin.scss      | SCSS       |         13 |          1 |          1 |         15 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/source/_res.scss        | SCSS       |         84 |          0 |          3 |         87 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/source/move-slider.scss | SCSS       |         40 |          1 |          2 |         43 |
+| /home/voron/Web/Work/Other/Сергей сайты/amanita/source/style.scss       | SCSS       |      3,409 |         31 |        317 |      3,757 |
+| Total                                                                   |            |     21,994 |        140 |        681 |     22,815 |
++-------------------------------------------------------------------------+------------+------------+------------+------------+------------+
