@@ -57,6 +57,18 @@
     }
 }
 
+@media (max-width: 1100px) {
+    .catalog-grid {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__header {
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+        }
+    }
+}
 @media (max-width: 1050px) {
     .header {
         &__logo {
@@ -644,6 +656,10 @@
     }
     .line {
         display: none;
+        &_mobile {
+            padding-top: 20px;
+            display: block;
+        }
     }
     .order {
         &__img {
@@ -664,6 +680,94 @@
         }
         &__aside {
             flex: 0 0 auto;
+        }
+    }
+    .filter {
+        width: 360px;
+        position: fixed;
+        max-height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 40;
+        overflow-x: scroll;
+        border-radius: 0;
+        border: none;
+        transform: translate(-120%, 0);
+        transition: transform 0.3s;
+        &.open {
+            transform: translate(0, 0);
+        }
+        &__title {
+            position: relative;
+            padding: 20px 20px 0 20px;
+            width: 100%;
+            & > svg {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
+        }
+        &__close-btn {
+            display: block;
+        }
+
+        &__subtitle {
+            padding: 20px;
+            font-size: 18px;
+            margin: 0;
+        }
+        &__item-title {
+            height: 42px;
+
+            padding: 0 20px;
+            font-size: 14px;
+        }
+        &__checkbox {
+            font-size: 14px;
+        }
+        &__element-wrapper {
+            margin: 0;
+            padding-top: 12px;
+        }
+    }
+    .catalog-grid {
+        &__content {
+            width: 100%;
+        }
+        &__header {
+            flex-direction: row;
+            justify-content: start;
+        }
+        &__item-per-page {
+            display: none;
+        }
+        &__header-title {
+            display: none;
+        }
+        &__select {
+            height: 38px;
+            width: 166px;
+        }
+        &__select-btn {
+            display: none;
+            &_mobile {
+                font-size: 14px;
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 11px;
+            }
+        }
+        &__select-title {
+            display: none;
+            &_mobile {
+                display: block;
+                font-size: 14px;
+            }
+        }
+        &__filter-btn-mobile {
+            display: flex;
         }
     }
 }
@@ -849,6 +953,7 @@
             height: 16px;
             padding: 0 7px;
             gap: 5px;
+            z-index: 2;
             & svg {
                 height: 5px;
             }
@@ -861,6 +966,7 @@
         &__header-btn {
             width: 30px;
             height: 30px;
+            z-index: 2;
             & svg {
                 height: 16px;
             }

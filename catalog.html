@@ -1,0 +1,2519 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Blog</title>
+	<meta http-equiv="Content-type" content="text/html" charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/move-slider.css" type="text/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__main bg_blue">
+			<div class="container">
+				<div class="header__main-wrapper">
+					<div class="header__main-menu-block ">
+						<div class="header__main-search">
+							<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+								fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M12.9224 6.39439C9.15555 6.39439 6.10191 9.44803 6.10191 13.2149C6.10191 16.9817 9.15555 20.0354 12.9224 20.0354C16.6893 20.0354 19.7429 16.9817 19.7429 13.2149C19.7429 9.44803 16.6893 6.39439 12.9224 6.39439ZM4.66602 13.2149C4.66602 8.65501 8.36253 4.9585 12.9224 4.9585C17.4823 4.9585 21.1788 8.65501 21.1788 13.2149C21.1788 17.7748 17.4823 21.4713 12.9224 21.4713C8.36253 21.4713 4.66602 17.7748 4.66602 13.2149Z"
+									fill="white" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M17.7455 18.038C18.0259 17.7576 18.4805 17.7576 18.7609 18.038L23.1224 22.3995C23.4028 22.6799 23.4028 23.1345 23.1224 23.4149C22.842 23.6953 22.3874 23.6953 22.1071 23.4149L17.7455 19.0533C17.4652 18.773 17.4652 18.3184 17.7455 18.038Z"
+									fill="white" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M12.9224 6.39439C9.15555 6.39439 6.10191 9.44803 6.10191 13.2149C6.10191 16.9817 9.15555 20.0354 12.9224 20.0354C16.6893 20.0354 19.7429 16.9817 19.7429 13.2149C19.7429 9.44803 16.6893 6.39439 12.9224 6.39439ZM4.66602 13.2149C4.66602 8.65501 8.36253 4.9585 12.9224 4.9585C17.4823 4.9585 21.1788 8.65501 21.1788 13.2149C21.1788 17.7748 17.4823 21.4713 12.9224 21.4713C8.36253 21.4713 4.66602 17.7748 4.66602 13.2149Z"
+									stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M17.7455 18.038C18.0259 17.7576 18.4805 17.7576 18.7609 18.038L23.1224 22.3995C23.4028 22.6799 23.4028 23.1345 23.1224 23.4149C22.842 23.6953 22.3874 23.6953 22.1071 23.4149L17.7455 19.0533C17.4652 18.773 17.4652 18.3184 17.7455 18.038Z"
+									stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</div>
+						<ul class="header__main-menu">
+							<li><a href="#">Каталог товаров</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="burger">
+						<div class="header__main-city-select city-select">
+							<div class="city-select__title">
+								Москва
+							</div>
+							<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"
+								fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M1.27635 13.6697C0.662011 12.447 0.316406 11.0658 0.316406 9.60531C0.316406 8.14481 0.662011 6.76361 1.27635 5.54097C2.76833 2.56792 5.84548 0.526367 9.39535 0.526367C12.9452 0.526367 16.0224 2.56792 17.5144 5.54097C18.1287 6.76361 18.4743 8.14481 18.4743 9.60531C18.4743 11.0658 18.1287 12.447 17.5144 13.6697C16.0224 16.6427 12.9452 18.6843 9.39535 18.6843C5.84548 18.6843 2.76833 16.6427 1.27635 13.6697ZM2.12372 6.59534C1.73938 7.5226 1.52693 8.53945 1.52693 9.60531C1.52693 10.6712 1.73938 11.688 2.12372 12.6153C3.11212 12.2322 4.27725 11.9247 5.56343 11.7177C5.49685 11.041 5.46114 10.3334 5.46114 9.60531C5.46114 8.87718 5.49685 8.16963 5.56343 7.49295C4.27725 7.28595 3.11212 6.97847 2.12372 6.59534ZM16.1144 5.51131C15.1127 3.87166 13.5281 2.62723 11.65 2.06555C11.7341 2.19629 11.8158 2.3349 11.8945 2.48137C12.4108 3.44555 12.8236 4.7626 13.0717 6.29331C14.2024 6.10992 15.2319 5.843 16.1144 5.51131ZM7.14075 2.06555C5.26262 2.62723 3.67804 3.87166 2.67633 5.51131C3.5588 5.8436 4.58835 6.10992 5.71899 6.29331C5.96714 4.7626 6.37993 3.44555 6.89622 2.48137C6.97491 2.3349 7.05662 2.19629 7.14075 2.06555ZM16.667 12.6153C17.0513 11.688 17.2638 10.6712 17.2638 9.60531C17.2638 8.53945 17.0513 7.5226 16.667 6.59534C15.6786 6.97847 14.5135 7.28595 13.2273 7.49295C13.2939 8.16963 13.3296 8.87718 13.3296 9.60531C13.3296 10.3334 13.2939 11.041 13.2273 11.7177C14.5135 11.9247 15.6786 12.2322 16.667 12.6153ZM2.67633 13.6993C3.67804 15.339 5.26262 16.5834 7.14075 17.1451C7.05662 17.0143 6.97491 16.8757 6.89622 16.7293C6.37993 15.7651 5.96714 14.448 5.71899 12.9173C4.58835 13.1007 3.5588 13.3676 2.67633 13.6993ZM11.65 17.1451C13.5281 16.5834 15.1127 15.339 16.1144 13.6993C15.2319 13.3676 14.2024 13.1007 13.0717 12.9173C12.8236 14.448 12.4108 15.7651 11.8945 16.7293C11.8158 16.8757 11.7341 17.0143 11.65 17.1451ZM9.39535 1.73689C9.16233 1.73689 8.94443 1.84765 8.73501 2.0256C8.45417 2.26408 8.19754 2.61574 7.9633 3.05334C7.50088 3.91645 7.13772 5.09005 6.91619 6.4525C7.70909 6.53542 8.53951 6.579 9.39535 6.579C10.2512 6.579 11.0816 6.53481 11.8745 6.4525C11.653 5.09005 11.2898 3.91645 10.8274 3.05334C10.5932 2.61574 10.3365 2.26408 10.0557 2.0256C9.84628 1.84765 9.62838 1.73689 9.39535 1.73689ZM9.39535 17.4737C9.62838 17.4737 9.84628 17.363 10.0557 17.185C10.3365 16.9466 10.5932 16.5949 10.8274 16.1573C11.2898 15.2942 11.653 14.1206 11.8745 12.7581C11.0816 12.6758 10.2512 12.6316 9.39535 12.6316C8.53951 12.6316 7.70909 12.6758 6.91619 12.7581C7.13772 14.1206 7.50088 15.2942 7.9633 16.1573C8.19754 16.5949 8.45417 16.9466 8.73501 17.185C8.94443 17.363 9.16233 17.4737 9.39535 17.4737ZM12.0282 11.5585C12.0876 10.9327 12.119 10.2784 12.119 9.60531C12.119 8.93226 12.0876 8.27797 12.0282 7.65213C11.1863 7.74171 10.3039 7.78952 9.39535 7.78952C8.48685 7.78952 7.60438 7.74171 6.76246 7.65213C6.70314 8.27797 6.67167 8.93226 6.67167 9.60531C6.67167 10.2784 6.70314 10.9327 6.76246 11.5585C7.60438 11.4689 8.48685 11.4211 9.39535 11.4211C10.3039 11.4211 11.1863 11.4689 12.0282 11.5585Z"
+									fill="white" stroke="white" stroke-width="0.4" />
+							</svg>
+							<div class="city-select__list">
+								<ul>
+									<li><a href="#">Санкт-Петербург</a></li>
+									<li><a class="select" href="#">Москва</a></li>
+									<li><a href="#">Новосибирск</a></li>
+									<li><a href="#">Екатеринбург</a></li>
+									<li><a href="#">Нижний Новгород</a></li>
+									<li><a href="#">Казань</a></li>
+									<li><a href="#">Самара</a></li>
+									<li><a href="#">Омск</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="header__btns-line header__btns-line_top">
+						<a href="#" class="header__btns-item">
+							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="28" viewBox="0 0 25 28"
+								fill="none">
+								<path
+									d="M12.5 13.4857C15.9434 13.4857 18.7429 10.6863 18.7429 7.24286C18.7429 3.79943 15.9434 1 12.5 1C9.05657 1 6.25714 3.79943 6.25714 7.24286C6.25714 10.6863 9.05657 13.4857 12.5 13.4857ZM12.5 2.97143C14.8526 2.97143 16.7714 4.89029 16.7714 7.24286C16.7714 9.59543 14.8526 11.5143 12.5 11.5143C10.1474 11.5143 8.22857 9.59543 8.22857 7.24286C8.22857 4.89029 10.1474 2.97143 12.5 2.97143Z"
+									fill="white" />
+								<path
+									d="M16.4429 15.4571H8.55714C4.39086 15.4571 1 18.848 1 23.0143C1 25.012 2.61657 26.6286 4.61429 26.6286H20.3857C22.3834 26.6286 24 25.012 24 23.0143C24 18.848 20.6091 15.4571 16.4429 15.4571ZM20.3857 24.6571H4.61429C3.70743 24.6571 2.97143 23.9211 2.97143 23.0143C2.97143 19.9389 5.48171 17.4286 8.55714 17.4286H16.4429C19.5183 17.4286 22.0286 19.9389 22.0286 23.0143C22.0286 23.9211 21.2926 24.6571 20.3857 24.6571Z"
+									fill="white" />
+								<path
+									d="M12.5 13.4857C15.9434 13.4857 18.7429 10.6863 18.7429 7.24286C18.7429 3.79943 15.9434 1 12.5 1C9.05657 1 6.25714 3.79943 6.25714 7.24286C6.25714 10.6863 9.05657 13.4857 12.5 13.4857ZM12.5 2.97143C14.8526 2.97143 16.7714 4.89029 16.7714 7.24286C16.7714 9.59543 14.8526 11.5143 12.5 11.5143C10.1474 11.5143 8.22857 9.59543 8.22857 7.24286C8.22857 4.89029 10.1474 2.97143 12.5 2.97143Z"
+									stroke="white" />
+								<path
+									d="M16.4429 15.4571H8.55714C4.39086 15.4571 1 18.848 1 23.0143C1 25.012 2.61657 26.6286 4.61429 26.6286H20.3857C22.3834 26.6286 24 25.012 24 23.0143C24 18.848 20.6091 15.4571 16.4429 15.4571ZM20.3857 24.6571H4.61429C3.70743 24.6571 2.97143 23.9211 2.97143 23.0143C2.97143 19.9389 5.48171 17.4286 8.55714 17.4286H16.4429C19.5183 17.4286 22.0286 19.9389 22.0286 23.0143C22.0286 23.9211 21.2926 24.6571 20.3857 24.6571Z"
+									stroke="white" />
+							</svg>
+						</a>
+						<a href="#" class="header__btns-item">
+							<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"
+								fill="none">
+								<path
+									d="M4 23C4 21.8954 4.89543 21 6 21H8C9.10457 21 10 21.8954 10 23V28C10 29.1046 9.10457 30 8 30H6C4.89543 30 4 29.1046 4 28V23Z"
+									stroke="white" stroke-width="3" />
+								<path
+									d="M16 10C16 8.89543 16.8954 8 18 8H20C21.1046 8 22 8.89543 22 10V28C22 29.1046 21.1046 30 20 30H18C16.8954 30 16 29.1046 16 28V10Z"
+									stroke="white" stroke-width="3" />
+								<path
+									d="M28 17C28 15.8954 28.8954 15 30 15H32C33.1046 15 34 15.8954 34 17V28C34 29.1046 33.1046 30 32 30H30C28.8954 30 28 29.1046 28 28V17Z"
+									stroke="white" stroke-width="3" />
+							</svg>
+						</a>
+						<a href="#" class="header__btns-item">
+							<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"
+								fill="none">
+								<path
+									d="M24.2081 7.9165C28.6695 7.9165 31.6673 12.163 31.6673 16.1245C31.6673 24.1473 19.2258 30.7165 19.0007 30.7165C18.7755 30.7165 6.33398 24.1473 6.33398 16.1245C6.33398 12.163 9.33177 7.9165 13.7933 7.9165C16.3547 7.9165 18.0295 9.21325 19.0007 10.3533C19.9718 9.21325 21.6466 7.9165 24.2081 7.9165Z"
+									stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</a>
+						<a href="#" class="header__btns-item header__cart">
+							<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"
+								fill="none">
+								<path
+									d="M28.1433 21.7904L14.8274 24.5182C13.8735 24.5182 13.0256 23.8823 12.8136 22.9283L9.3318 10.1198H8.05992C7.42398 10.1198 7 9.69586 7 9.05992C7 8.42398 7.42398 8 8.05992 8H9.3318C10.2857 8 11.1336 8.63594 11.3456 9.58987L11.9657 11.7993H29.106C29.7419 11.7993 30.3779 12.1173 30.8018 12.6472C31.2258 13.1772 31.3318 13.9191 31.1198 14.5551L30.1571 20.3065C29.8391 21.1544 29 21.5337 28.1433 21.7904ZM12.4956 13.9191L14.7214 22.3984L28.0373 19.6705L29 13.9191H12.4956Z"
+									fill="white" />
+								<path
+									d="M14.7603 30.2598C13.7478 30.2598 12.9194 29.4314 12.9194 28.419C12.9194 27.4065 13.7478 26.5781 14.7603 26.5781C15.7727 26.5781 16.6012 27.4065 16.6012 28.419C16.6012 29.4314 15.7727 30.2598 14.7603 30.2598Z"
+									fill="white" />
+								<path
+									d="M26.4233 30.2598C25.4108 30.2598 24.5824 29.4314 24.5824 28.419C24.5824 27.4065 25.4108 26.5781 26.4233 26.5781C27.4358 26.5781 28.2642 27.4065 28.2642 28.419C28.2642 29.4314 27.4357 30.2598 26.4233 30.2598Z"
+									fill="white" />
+								<path
+									d="M28.1433 21.7904L14.8274 24.5182C13.8735 24.5182 13.0256 23.8823 12.8136 22.9283L9.3318 10.1198H8.05992C7.42398 10.1198 7 9.69586 7 9.05992C7 8.42398 7.42398 8 8.05992 8H9.3318C10.2857 8 11.1336 8.63594 11.3456 9.58987L11.9657 11.7993H29.106C29.7419 11.7993 30.3779 12.1173 30.8018 12.6472C31.2258 13.1772 31.3318 13.9191 31.1198 14.5551L30.1571 20.3065C29.8391 21.1544 29 21.5337 28.1433 21.7904ZM12.4956 13.9191L14.7214 22.3984L28.0373 19.6705L29 13.9191H12.4956Z"
+									stroke="white" stroke-width="0.7" />
+								<path
+									d="M14.7603 30.2598C13.7478 30.2598 12.9194 29.4314 12.9194 28.419C12.9194 27.4065 13.7478 26.5781 14.7603 26.5781C15.7727 26.5781 16.6012 27.4065 16.6012 28.419C16.6012 29.4314 15.7727 30.2598 14.7603 30.2598Z"
+									stroke="white" stroke-width="0.7" />
+								<path
+									d="M26.4233 30.2598C25.4108 30.2598 24.5824 29.4314 24.5824 28.419C24.5824 27.4065 25.4108 26.5781 26.4233 26.5781C27.4358 26.5781 28.2642 27.4065 28.2642 28.419C28.2642 29.4314 27.4357 30.2598 26.4233 30.2598Z"
+									stroke="white" stroke-width="0.7" />
+							</svg>
+							<div class="header__cart-marker active">
+								2
+							</div>
+						</a>
+					</div>
+					<div class="header__search-panel">
+						<div class="header__search-input-block">
+							<input type="text" placeholder="Поиск по сайту">
+							<svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23"
+								fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M10.1532 5.79568C7.19351 5.79568 4.79422 8.19497 4.79422 11.1546C4.79422 14.1143 7.19351 16.5136 10.1532 16.5136C13.1129 16.5136 15.5121 14.1143 15.5121 11.1546C15.5121 8.19497 13.1129 5.79568 10.1532 5.79568ZM3.66602 11.1546C3.66602 7.57188 6.57042 4.66748 10.1532 4.66748C13.7359 4.66748 16.6403 7.57188 16.6403 11.1546C16.6403 14.7374 13.7359 17.6418 10.1532 17.6418C6.57042 17.6418 3.66602 14.7374 3.66602 11.1546Z"
+									fill="white" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M13.9428 14.9442C14.1631 14.724 14.5202 14.724 14.7405 14.9442L18.1675 18.3712C18.3878 18.5915 18.3878 18.9486 18.1675 19.1689C17.9472 19.3892 17.59 19.3892 17.3697 19.1689L13.9428 15.742C13.7225 15.5217 13.7225 15.1645 13.9428 14.9442Z"
+									fill="white" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M10.1532 5.79568C7.19351 5.79568 4.79422 8.19497 4.79422 11.1546C4.79422 14.1143 7.19351 16.5136 10.1532 16.5136C13.1129 16.5136 15.5121 14.1143 15.5121 11.1546C15.5121 8.19497 13.1129 5.79568 10.1532 5.79568ZM3.66602 11.1546C3.66602 7.57188 6.57042 4.66748 10.1532 4.66748C13.7359 4.66748 16.6403 7.57188 16.6403 11.1546C16.6403 14.7374 13.7359 17.6418 10.1532 17.6418C6.57042 17.6418 3.66602 14.7374 3.66602 11.1546Z"
+									stroke="white" stroke-width="0.6875" stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M13.9428 14.9442C14.1631 14.724 14.5202 14.724 14.7405 14.9442L18.1675 18.3712C18.3878 18.5915 18.3878 18.9486 18.1675 19.1689C17.9472 19.3892 17.59 19.3892 17.3697 19.1689L13.9428 15.742C13.7225 15.5217 13.7225 15.1645 13.9428 14.9442Z"
+									stroke="white" stroke-width="0.6875" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</div>
+						<div class="header__search-cancel">
+							Отмена
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="container">
+				<div class="header__bottom-wrapper">
+					<a class="header__logo" href="#">
+						<picture>
+							<source srcset="img/header-logo_black_mobile.png" media="(max-width: 1050px)">
+							<img src="img/header-logo_black.png" alt="">
+						</picture>
+					</a>
+					<div class="header__bottom-right">
+						<div class="header__contacts">
+							<div class="header__contacts-title">
+								Работаем с 9:00 до 21:00
+							</div>
+							<a href="tel:+7 (902) 224-55-62 " class="header__contacts-item">
+								+7 (902) 224-55-62
+								<div class="header__contacts-btn">
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+							</a>
+						</div>
+						<div class="header__btns-line">
+							<a href="#" class="header__btns-item">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25" height="28" viewBox="0 0 25 28"
+									fill="none">
+									<path
+										d="M12.5 13.4857C15.9434 13.4857 18.7429 10.6863 18.7429 7.24286C18.7429 3.79943 15.9434 1 12.5 1C9.05657 1 6.25714 3.79943 6.25714 7.24286C6.25714 10.6863 9.05657 13.4857 12.5 13.4857ZM12.5 2.97143C14.8526 2.97143 16.7714 4.89029 16.7714 7.24286C16.7714 9.59543 14.8526 11.5143 12.5 11.5143C10.1474 11.5143 8.22857 9.59543 8.22857 7.24286C8.22857 4.89029 10.1474 2.97143 12.5 2.97143Z"
+										fill="white" />
+									<path
+										d="M16.4429 15.4571H8.55714C4.39086 15.4571 1 18.848 1 23.0143C1 25.012 2.61657 26.6286 4.61429 26.6286H20.3857C22.3834 26.6286 24 25.012 24 23.0143C24 18.848 20.6091 15.4571 16.4429 15.4571ZM20.3857 24.6571H4.61429C3.70743 24.6571 2.97143 23.9211 2.97143 23.0143C2.97143 19.9389 5.48171 17.4286 8.55714 17.4286H16.4429C19.5183 17.4286 22.0286 19.9389 22.0286 23.0143C22.0286 23.9211 21.2926 24.6571 20.3857 24.6571Z"
+										fill="white" />
+									<path
+										d="M12.5 13.4857C15.9434 13.4857 18.7429 10.6863 18.7429 7.24286C18.7429 3.79943 15.9434 1 12.5 1C9.05657 1 6.25714 3.79943 6.25714 7.24286C6.25714 10.6863 9.05657 13.4857 12.5 13.4857ZM12.5 2.97143C14.8526 2.97143 16.7714 4.89029 16.7714 7.24286C16.7714 9.59543 14.8526 11.5143 12.5 11.5143C10.1474 11.5143 8.22857 9.59543 8.22857 7.24286C8.22857 4.89029 10.1474 2.97143 12.5 2.97143Z"
+										stroke="white" />
+									<path
+										d="M16.4429 15.4571H8.55714C4.39086 15.4571 1 18.848 1 23.0143C1 25.012 2.61657 26.6286 4.61429 26.6286H20.3857C22.3834 26.6286 24 25.012 24 23.0143C24 18.848 20.6091 15.4571 16.4429 15.4571ZM20.3857 24.6571H4.61429C3.70743 24.6571 2.97143 23.9211 2.97143 23.0143C2.97143 19.9389 5.48171 17.4286 8.55714 17.4286H16.4429C19.5183 17.4286 22.0286 19.9389 22.0286 23.0143C22.0286 23.9211 21.2926 24.6571 20.3857 24.6571Z"
+										stroke="white" />
+								</svg>
+							</a>
+							<a href="#" class="header__btns-item">
+								<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"
+									fill="none">
+									<path
+										d="M4 23C4 21.8954 4.89543 21 6 21H8C9.10457 21 10 21.8954 10 23V28C10 29.1046 9.10457 30 8 30H6C4.89543 30 4 29.1046 4 28V23Z"
+										stroke="white" stroke-width="3" />
+									<path
+										d="M16 10C16 8.89543 16.8954 8 18 8H20C21.1046 8 22 8.89543 22 10V28C22 29.1046 21.1046 30 20 30H18C16.8954 30 16 29.1046 16 28V10Z"
+										stroke="white" stroke-width="3" />
+									<path
+										d="M28 17C28 15.8954 28.8954 15 30 15H32C33.1046 15 34 15.8954 34 17V28C34 29.1046 33.1046 30 32 30H30C28.8954 30 28 29.1046 28 28V17Z"
+										stroke="white" stroke-width="3" />
+								</svg>
+							</a>
+							<a href="#" class="header__btns-item">
+								<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"
+									fill="none">
+									<path
+										d="M24.2081 7.9165C28.6695 7.9165 31.6673 12.163 31.6673 16.1245C31.6673 24.1473 19.2258 30.7165 19.0007 30.7165C18.7755 30.7165 6.33398 24.1473 6.33398 16.1245C6.33398 12.163 9.33177 7.9165 13.7933 7.9165C16.3547 7.9165 18.0295 9.21325 19.0007 10.3533C19.9718 9.21325 21.6466 7.9165 24.2081 7.9165Z"
+										stroke="white" stroke-width="3" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+							</a>
+							<a href="#" class="header__btns-item header__cart">
+								<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"
+									fill="none">
+									<path
+										d="M28.1433 21.7904L14.8274 24.5182C13.8735 24.5182 13.0256 23.8823 12.8136 22.9283L9.3318 10.1198H8.05992C7.42398 10.1198 7 9.69586 7 9.05992C7 8.42398 7.42398 8 8.05992 8H9.3318C10.2857 8 11.1336 8.63594 11.3456 9.58987L11.9657 11.7993H29.106C29.7419 11.7993 30.3779 12.1173 30.8018 12.6472C31.2258 13.1772 31.3318 13.9191 31.1198 14.5551L30.1571 20.3065C29.8391 21.1544 29 21.5337 28.1433 21.7904ZM12.4956 13.9191L14.7214 22.3984L28.0373 19.6705L29 13.9191H12.4956Z"
+										fill="white" />
+									<path
+										d="M14.7603 30.2598C13.7478 30.2598 12.9194 29.4314 12.9194 28.419C12.9194 27.4065 13.7478 26.5781 14.7603 26.5781C15.7727 26.5781 16.6012 27.4065 16.6012 28.419C16.6012 29.4314 15.7727 30.2598 14.7603 30.2598Z"
+										fill="white" />
+									<path
+										d="M26.4233 30.2598C25.4108 30.2598 24.5824 29.4314 24.5824 28.419C24.5824 27.4065 25.4108 26.5781 26.4233 26.5781C27.4358 26.5781 28.2642 27.4065 28.2642 28.419C28.2642 29.4314 27.4357 30.2598 26.4233 30.2598Z"
+										fill="white" />
+									<path
+										d="M28.1433 21.7904L14.8274 24.5182C13.8735 24.5182 13.0256 23.8823 12.8136 22.9283L9.3318 10.1198H8.05992C7.42398 10.1198 7 9.69586 7 9.05992C7 8.42398 7.42398 8 8.05992 8H9.3318C10.2857 8 11.1336 8.63594 11.3456 9.58987L11.9657 11.7993H29.106C29.7419 11.7993 30.3779 12.1173 30.8018 12.6472C31.2258 13.1772 31.3318 13.9191 31.1198 14.5551L30.1571 20.3065C29.8391 21.1544 29 21.5337 28.1433 21.7904ZM12.4956 13.9191L14.7214 22.3984L28.0373 19.6705L29 13.9191H12.4956Z"
+										stroke="white" stroke-width="0.7" />
+									<path
+										d="M14.7603 30.2598C13.7478 30.2598 12.9194 29.4314 12.9194 28.419C12.9194 27.4065 13.7478 26.5781 14.7603 26.5781C15.7727 26.5781 16.6012 27.4065 16.6012 28.419C16.6012 29.4314 15.7727 30.2598 14.7603 30.2598Z"
+										stroke="white" stroke-width="0.7" />
+									<path
+										d="M26.4233 30.2598C25.4108 30.2598 24.5824 29.4314 24.5824 28.419C24.5824 27.4065 25.4108 26.5781 26.4233 26.5781C27.4358 26.5781 28.2642 27.4065 28.2642 28.419C28.2642 29.4314 27.4357 30.2598 26.4233 30.2598Z"
+										stroke="white" stroke-width="0.7" />
+								</svg>
+								<div class="header__cart-marker active">
+									2
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="header__bottom-right_mobile">
+						<a class="header__call_mobile" href="tel:+7 (902) 224-55-62">
+							<svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" viewBox="0 0 15 20"
+								fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M14.2445 17.5304L12.1289 19.4348C11.564 19.9368 10.7936 20.1191 10.0718 19.9224L9.92594 19.8819C9.2894 19.6741 8.83481 19.4093 8.08135 19.0901C5.87233 17.8152 3.82613 15.9009 2.31866 12.9527C0.810645 10.2737 -0.0198555 7.36814 0.000360598 4.77008C0.0260406 4.08636 0.111276 3.40595 0.253882 2.73718C0.413425 1.92934 0.98057 1.26999 1.74223 1.00625L4.41294 0.077071C5.15985 -0.181128 6.39248 0.23055 6.22147 0.996281C6.23786 1.04615 6.25152 1.09657 6.26244 1.14754L7.15469 5.34688C7.31259 6.04944 6.94378 7.02461 6.28758 7.02794L5.33633 7.40637C5.23361 7.44571 5.17624 7.55763 5.20192 7.66679C5.46036 8.67853 5.85539 9.64816 6.37555 10.548C6.87658 11.46 7.49891 12.4545 8.2256 13.0297C8.30482 13.1072 8.4283 13.1122 8.51245 13.0419L9.30962 12.3836C9.85982 11.9337 10.6488 11.9642 11.1646 12.4557L14.2686 15.3579C14.568 15.9563 14.7385 16.0317 14.7368 16.4467C14.7308 16.8633 14.5516 17.2573 14.2445 17.5304ZM13.4474 16.5791L13.4632 16.5619C13.5457 16.4699 13.5397 16.3275 13.4506 16.2428L10.8073 13.3433C10.2658 13.2696 10.1456 13.2646 10.0609 13.3328L9.26372 14.4437C9.09707 14.4476 7.89012 14.401 7.37816 13.8824C6.57989 13.0701 5.89473 12.1504 5.34179 11.1469C4.77028 10.1546 4.79705 9.08688 4.04796 7.97319C3.86437 7.25954 4.2299 6.51763 4.89922 6.24614L5.85047 5.86715C6.20125 5.8267 6.00674 5.71755 5.98324 5.60951L5.08335 1.40685C5.07024 1.34479 5.03199 1.29105 4.97845 1.25891L4.92272 1.67779C5.34343 1.56144 4.90632 1.57252 4.79705 1.72212L2.40936 2.17147C1.77556 2.29503 1.51275 2.60199 1.44062 2.97821C1.31496 3.57051 1.23901 4.17335 1.21278 4.77895C1.19584 7.16147 1.96898 9.83322 3.36881 12.7925C4.76754 14.8243 6.65147 16.8423 8.84574 18.018C9.19979 18.2984 9.80191 18.5311 10.4794 18.715C10.6668 18.8375 11.058 18.7588 11.3411 18.5078L13.4485 16.5979L13.4474 16.5791Z"
+									fill="#F9F9F9" />
+							</svg>
+						</a>
+						<div class="burger-btn">
+							<svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14"
+								fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M5.25719 1.13912C5.25828 0.43785 5.72782 0 6.3066 0H19.9352C20.5135 0.411914 20.9901 0.422594 20.9999 1.16455C21.0091 1.81547 20.5477 1.94973 19.9695 1.95837C19.9581 1.95837 19.9467 1.95837 19.9352 1.95837H6.3066C5.72782 1.95837 5.25828 1.97312 5.25719 1.13912ZM19.9352 5.87461H1.06502C0.384075 5.86546 0.0101795 6.2967 0.00094223 6.83727C-0.00884056 7.37835 0.0417023 7.82383 0.938395 7.83247C1.04274 7.83247 1.05361 7.83247 1.06502 7.83247H19.9352C20.5135 7.84112 20.9901 7.40988 20.9999 6.86931C21.0091 6.32873 20.5477 5.88326 19.9695 5.87461C19.9581 5.8741 19.9467 5.8741 19.9352 5.87461ZM19.9352 11.7487H10.5015C9.92326 11.7487 9.45426 12.5252 9.45372 12.7276C9.45372 13.2682 9.92217 13.9949 10.5009 14H19.9352C20.5135 14 20.9825 13.2687 20.983 12.7282C20.983 12.5354 20.514 11.7492 19.9352 11.7487Z"
+									fill="#F9F9F9" />
+							</svg>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="nav-line section_grey">
+		<div class="container">
+			<div class="nav-line__wrapper">
+				<div class="nav-line__item">
+					<a href="#">Главная</a>
+				</div>
+				<div class="nav-line__item nav-line__item_last">
+					<span>Каталог товаров</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="catalog-grid section_text section_grey">
+		<div class="container">
+			<div class="section-grid__title title">Каталог товаров</div>
+			<div class="catalog-grid__tabs tabs">
+				<input type="checkbox" name="popular__filter" id="popular__filter1">
+				<label for="popular__filter1">Микродозинг мухоморами</label>
+				<input type="checkbox" name="popular__filter" id="popular__filter2">
+				<label for="popular__filter2">Мухомор красный</label>
+				<input type="checkbox" name="popular__filter" id="popular__filter3">
+				<label for="popular__filter3">Мухомор красный</label>
+				<input type="checkbox" name="popular__filter" id="popular__filter4">
+				<label for="popular__filter4">Ежовик обыкновенный</label>
+				<input type="checkbox" name="popular__filter" id="popular__filter5">
+				<label for="popular__filter5">Кордицепс военный</label>
+				<input type="checkbox" name="popular__filter" id="popular__filter6">
+				<label for="popular__filter6">Мухомор сушёный</label>
+				<input type="checkbox" name="popular__filter" id="popular__filter7">
+				<label for="popular__filter7">Микродозинг сушёным ежовиком</label>
+				<input type="checkbox" name="popular__filter" id="popular__filter8">
+				<label for="popular__filter8">Мухомор сушёный</label>
+			</div>
+			<div class="catalog-grid__wrapper">
+				<div class="filter catalog-grid__aside" data-accordeon="main">
+					<div class="filter__title title_small">
+						<span>Фильтры</span>
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M12.2111 3.11111C12.2111 2.44224 11.6689 1.9 11 1.9C10.3311 1.9 9.78889 2.44224 9.78889 3.11111V15.4531C8.49046 15.9426 7.56667 17.1967 7.56667 18.6667C7.56667 20.5629 9.10377 22.1 11 22.1C12.8962 22.1 14.4333 20.5629 14.4333 18.6667C14.4333 17.1967 13.5096 15.9426 12.2111 15.4531V3.11111ZM18.8778 3.11111C18.8778 2.44224 18.3356 1.9 17.6667 1.9C16.9978 1.9 16.4556 2.44224 16.4556 3.11111V8.78641C15.1571 9.27599 14.2333 10.53 14.2333 12C14.2333 13.47 15.1571 14.7241 16.4556 15.2136V20.8889C16.4556 21.5578 16.9978 22.1 17.6667 22.1C18.3356 22.1 18.8778 21.5578 18.8778 20.8889V15.2136C20.1762 14.7241 21.1 13.47 21.1 12C21.1 10.53 20.1762 9.27599 18.8778 8.78641V3.11111ZM4.33333 1.9C2.43716 1.9 0.9 3.43716 0.9 5.33333C0.9 6.80335 1.8238 8.05735 3.12222 8.54692V20.8889C3.12222 21.5578 3.66445 22.1 4.33333 22.1C5.00221 22.1 5.54444 21.5578 5.54444 20.8889V8.54692C6.84287 8.05735 7.76667 6.80335 7.76667 5.33333C7.76667 3.43716 6.22951 1.9 4.33333 1.9ZM3.32222 5.33333C3.32222 4.77492 3.77492 4.32222 4.33333 4.32222C4.89175 4.32222 5.34444 4.77492 5.34444 5.33333C5.34444 5.89175 4.89175 6.34444 4.33333 6.34444C3.77492 6.34444 3.32222 5.89175 3.32222 5.33333ZM16.6556 12C16.6556 11.4416 17.1082 10.9889 17.6667 10.9889C18.2251 10.9889 18.6778 11.4416 18.6778 12C18.6778 12.5584 18.2251 13.0111 17.6667 13.0111C17.1082 13.0111 16.6556 12.5584 16.6556 12ZM9.98889 18.6667C9.98889 18.1082 10.4416 17.6556 11 17.6556C11.5584 17.6556 12.0111 18.1082 12.0111 18.6667C12.0111 19.2251 11.5584 19.6778 11 19.6778C10.4416 19.6778 9.98889 19.2251 9.98889 18.6667Z"
+								fill="#EE2D45" stroke="#EE2D45" stroke-width="0.2" />
+						</svg>
+						<div class="filter__close-btn">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M1.07151 1.07107C1.39695 0.745631 1.92436 0.745405 2.24952 1.07056L15.2021 14.0231C15.5272 14.3483 15.527 14.8757 15.2016 15.2011C14.8761 15.5266 14.3487 15.5268 14.0236 15.2016L1.07101 2.24908C0.745848 1.92392 0.746074 1.3965 1.07151 1.07107Z"
+									fill="black" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M15.2076 1.06502C15.5328 1.39018 15.5325 1.91759 15.2071 2.24303L2.24347 15.2067C1.91804 15.5321 1.39063 15.5323 1.06547 15.2072C0.740308 14.882 0.740535 14.3546 1.06597 14.0292L14.0296 1.06553C14.355 0.740091 14.8824 0.739865 15.2076 1.06502Z"
+									fill="black" />
+							</svg>
+						</div>
+					</div>
+					<div class="line line_mobile"></div>
+					<div class="filter__subtitle title_small">
+						Категории
+					</div>
+					<div class="filter__item">
+						<div class="filter__item-title hide" data-accordeon="btn">Мухоморы</div>
+						<div class="filter__item-btn hide" data-accordeon="indicator">
+						</div>
+						<div class="filter__element-wrapper hide" data-accordeon="hiddenContent">
+							<div class="filter__checkbox checkbox">
+								<input id="filter_category_1" type="checkbox" name="filter-category1">
+								<label for="filter_category_1">
+									<span>Мухоморы в капсулах</span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_category_2" type="checkbox" name="filter-category1">
+								<label for="filter_category_2">
+									<span>Мухоморы в вакуумных упаковках</span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_category_3" type="checkbox" name="filter-category1">
+								<label for="filter_category_3">
+									<span>Мухомор сушеный</span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_category_4" type="checkbox" name="filter-category1">
+								<label for="filter_category_4">
+									<span>Порошок красного мухомора</span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_category_5" type="checkbox" name="filter-category1">
+								<label for="filter_category_5">
+									<span>Нераскрытые шляпки мухомора</span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_category_6" type="checkbox" name="filter-category1">
+								<label for="filter_category_6">
+									<span>Микродозинг мухомора</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="filter__item">
+						<div class="filter__item-title hide" data-accordeon="btn">Ежовик</div>
+						<div class="filter__item-btn hide" data-accordeon="indicator">
+						</div>
+						<div class="filter__element-wrapper hide" data-accordeon="hiddenContent">
+							<div class="filter__checkbox checkbox">
+								<input id="filter_category_1-2" type="checkbox" name="filter-category2">
+								<label for="filter_category_1-2">
+									<span>Ежовик в капсулах</span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_category_2-2" type="checkbox" name="filter-category2">
+								<label for="filter_category_2-2">
+									<span>Ежовик в вакуумных упаковках</span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_category_3-2" type="checkbox" name="filter-category2">
+								<label for="filter_category_3-2">
+									<span>Ежовик сушеный</span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_category_4-2" type="checkbox" name="filter-category2">
+								<label for="filter_category_4-2">
+									<span>Порошок красного Ежовика</span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_category_5-2" type="checkbox" name="filter-category2">
+								<label for="filter_category_5-2">
+									<span>Нераскрытые шляпки Ежовика</span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_category_6-2" type="checkbox" name="filter-category2">
+								<label for="filter_category_6-2">
+									<span>Микродозинг Ежовика</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="filter__item">
+						<div class="filter__item-title hide" data-accordeon="btn">Кордицепс</div>
+						<div class="filter__item-btn hide" data-accordeon="indicator">
+						</div>
+						<div class="filter__element-wrapper hide" data-accordeon="hiddenContent">
+							<div class="filter__checkbox checkbox">
+								<input id="filter_category_1-3" type="checkbox" name="filter-category3">
+								<label for="filter_category_1-3">
+									<span>Кордицепс в капсулах</span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_category_2-3" type="checkbox" name="filter-category3">
+								<label for="filter_category_2-3">
+									<span>Кордицепс в вакуумных упаковках</span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_category_3-3" type="checkbox" name="filter-category3">
+								<label for="filter_category_3-3">
+									<span>Кордицепс сушеный</span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_category_4-3" type="checkbox" name="filter-category3">
+								<label for="filter_category_4-3">
+									<span>Порошок красного Кордицепса</span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_category_5-3" type="checkbox" name="filter-category3">
+								<label for="filter_category_5-3">
+									<span>Нераскрытые шляпки Кордицепса</span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_category_6-3" type="checkbox" name="filter-category3">
+								<label for="filter_category_6-3">
+									<span>Микродозинг Кордицепса</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="filter__subtitle title_small">
+						Вид
+					</div>
+					<div class="filter__item">
+						<div class="filter__element-wrapper">
+							<div class="filter__checkbox checkbox">
+								<input id="filter_view_1" type="checkbox" name="filter-view">
+								<label for="filter_view_1">
+									<span>Капсулы </span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_view_2" type="checkbox" name="filter-view">
+								<label for="filter_view_2">
+									<span>Порошок </span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_view_3" type="checkbox" name="filter-view">
+								<label for="filter_view_3">
+									<span>Микродозинг</span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_view_4" type="checkbox" name="filter-view">
+								<label for="filter_view_4">
+									<span>Сушёные </span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_view_5" type="checkbox" name="filter-view">
+								<label for="filter_view_5">
+									<span>Перемолотые </span>
+								</label>
+							</div>
+
+						</div>
+					</div>
+					<div class="filter__subtitle title_small">
+						Количество капсул
+					</div>
+					<div class="filter__item">
+						<div class="filter__element-wrapper">
+							<div class="filter__checkbox checkbox">
+								<input id="filter_quantity_1" type="checkbox" name="filter-quantity">
+								<label for="filter_quantity_1">
+									<span>30 шт. </span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_quantity_2" type="checkbox" name="filter-quantity">
+								<label for="filter_quantity_2">
+									<span>60 шт. </span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_quantity_3" type="checkbox" name="filter-quantity">
+								<label for="filter_quantity_3">
+									<span>120 шт.</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="filter__subtitle title_small">
+						Наличие
+					</div>
+					<div class="filter__item">
+						<div class="filter__element-wrapper filter__element-wrapper_last">
+							<div class="filter__checkbox checkbox">
+								<input id="filter_available_1" type="checkbox" name="filter-available">
+								<label for="filter_available_1">
+									<span>В наличии </span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_available_2" type="checkbox" name="filter-available">
+								<label for="filter_available_2">
+									<span>В наличии мало </span>
+								</label>
+							</div>
+							<div class="filter__checkbox checkbox">
+								<input id="filter_available_3" type="checkbox" name="filter-available">
+								<label for="filter_available_3">
+									<span>Нет в наличии</span>
+								</label>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="catalog-grid__content">
+					<div class="catalog-grid__header">
+						<div class="catalog-grid__sort">
+							<span class="catalog-grid__header-title">Сортировать по:</span>
+							<div class="catalog-grid__select" data-select="main">
+								<div class="catalog-grid__select-title" data-select="title">Сортировка</div>
+								<div class="catalog-grid__select-title_mobile">Сортировать по
+								</div>
+								<div class="catalog-grid__select-list" data-select="list">
+									<div class="catalog-grid__select-list-wrapper">
+										<input type="radio" id="sort1" name="sort" checked>
+										<label for="sort1">Популярности</label>
+										<input type="radio" id="sort2" name="sort">
+										<label for="sort2">Хиты продаж</label>
+										<input type="radio" id="sort3" name="sort">
+										<label for="sort3">Акции</label>
+										<input type="radio" id="sort4" name="sort">
+										<label for="sort4">По алфавиту</label>
+										<input type="radio" id="sort5" name="sort">
+										<label for="sort5">Сначала популярные</label>
+										<input type="radio" id="sort6" name="sort">
+										<label for="sort6">Сначала дорогие</label>
+										<input type="radio" id="sort7" name="sort">
+										<label for="sort7">Сначала дешевые</label>
+										<input type="radio" id="sort8" name="sort">
+										<label for="sort8">Есть в наличии</label>
+									</div>
+								</div>
+								<div class="catalog-grid__select-btn" data-select="btn"></div>
+								<div class="catalog-grid__select-btn_mobile"><svg width="16" height="16"
+										viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.07904 3.21252L6.03736 1.17084C5.80986 0.943052 5.44002 0.943052 5.21252 1.17084L3.17084 3.21252C2.94305 3.44032 2.94305 3.80957 3.17084 4.03736C3.39835 4.26515 3.76818 4.26515 3.99568 4.03736L5.0416 2.99144V14.4167C5.0416 14.7387 5.30294 15 5.62494 15C5.94694 15 6.20828 14.7387 6.20828 14.4167V2.99144L7.2542 4.03736C7.36795 4.1514 7.51728 4.20828 7.66662 4.20828C7.81595 4.20828 7.96529 4.1514 8.07904 4.03736C8.30683 3.80957 8.30683 3.44032 8.07904 3.21252Z"
+											fill="black" fill-opacity="0.5" />
+										<path
+											d="M4.9916 3.11215L4.03106 4.07269L4.03104 4.07271L3.99568 4.03736L4.9916 3.11215ZM4.9916 3.11215V14.4167C4.9916 14.7663 5.27532 15.05 5.62494 15.05C5.97456 15.05 6.25828 14.7663 6.25828 14.4167V3.11215L7.2188 4.07267L4.9916 3.11215ZM8.11439 3.17717L6.07274 1.13551L7.21884 4.07271C7.34238 4.19654 7.50461 4.25828 7.66662 4.25828C7.82863 4.25828 7.99086 4.19654 8.11439 4.07271C8.36171 3.8254 8.36171 3.42449 8.11439 3.17717ZM3.13549 3.17717C2.88818 3.42448 2.88817 3.82537 3.13547 4.07269L5.21252 1.17084L5.17717 1.13549L5.17714 1.13551L3.13549 3.17717Z"
+											stroke="black" stroke-opacity="0.5" stroke-width="0.1" />
+										<path
+											d="M12.579 11.9626C12.3512 11.7348 11.982 11.7348 11.7542 11.9626L10.7083 13.0085V1.58333C10.7083 1.26133 10.4469 1 10.1249 1C9.80293 1 9.54159 1.26133 9.54159 1.58333V13.0085L8.49568 11.9626C8.26789 11.7348 7.89834 11.7348 7.67084 11.9626C7.44305 12.1904 7.44305 12.5596 7.67084 12.7874L9.71251 14.8291C9.82655 14.9431 9.97559 15 10.1249 15C10.2743 15 10.4233 14.9431 10.5373 14.8291L12.579 12.7874C12.8068 12.5596 12.8068 12.1904 12.579 11.9626Z"
+											fill="black" fill-opacity="0.5" />
+										<path
+											d="M12.6144 11.9272C12.367 11.6799 11.9661 11.6799 11.7188 11.9272L10.7583 12.8878V1.58333C10.7583 1.23372 10.4745 0.95 10.1249 0.95C9.77531 0.95 9.49159 1.23372 9.49159 1.58333V12.8878L8.53103 11.9272C8.28374 11.6799 7.88253 11.6799 7.63549 11.9272C7.38817 12.1745 7.38817 12.5755 7.63549 12.8228L9.67716 14.8644C9.80094 14.9882 9.96286 15.05 10.1249 15.05C10.287 15.05 10.4489 14.9882 10.5727 14.8644L12.6144 12.8228C12.8617 12.5755 12.8617 12.1745 12.6144 11.9272Z"
+											stroke="black" stroke-opacity="0.5" stroke-width="0.1" />
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-grid__item-per-page">
+							<div class="catalog-grid__header-title">Товаров на странице:</div>
+							<div class="catalog-grid__tab-block tabs ">
+								<input type="radio" name="catalog-grid_per-page" id="catalog-grid__12_per-page"
+									checked="">
+								<label for="catalog-grid__12_per-page">12</label>
+								<input type="radio" name="catalog-grid_per-page" id="catalog-grid__24_per-page">
+								<label for="catalog-grid__24_per-page">24</label>
+								<input type="radio" name="catalog-grid_per-page" id="catalog-grid__36_per-page0">
+								<label for="catalog-grid__36_per-page0">36</label>
+							</div>
+						</div>
+						<div class="catalog-grid__filter-btn-mobile">
+							Фильтры
+							<svg width="17" height="20" viewBox="0 0 17 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g opacity="0.5">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M9 3C9.42957 3 9.77778 3.34823 9.77778 3.77778V12.4661C10.684 12.7864 11.3333 13.6507 11.3333 14.6667C11.3333 15.9554 10.2887 17 9 17C7.7113 17 6.66667 15.9554 6.66667 14.6667C6.66667 13.6507 7.31596 12.7864 8.22222 12.4661V3.77778C8.22222 3.34823 8.57043 3 9 3ZM13.6667 3C14.0962 3 14.4444 3.34823 14.4444 3.77778V7.79944C15.3507 8.11975 16 8.98407 16 10C16 11.0159 15.3507 11.8803 14.4444 12.2006V16.2222C14.4444 16.6518 14.0962 17 13.6667 17C13.2371 17 12.8889 16.6518 12.8889 16.2222V12.2006C11.9826 11.8803 11.3333 11.0159 11.3333 10C11.3333 8.98407 11.9826 8.11975 12.8889 7.79944V3.77778C12.8889 3.34823 13.2371 3 13.6667 3ZM2 5.33333C2 4.04467 3.04467 3 4.33333 3C5.62199 3 6.66667 4.04467 6.66667 5.33333C6.66667 6.34928 6.01737 7.21358 5.11111 7.53389V16.2222C5.11111 16.6518 4.76288 17 4.33333 17C3.90377 17 3.55556 16.6518 3.55556 16.2222V7.53389C2.6493 7.21358 2 6.34928 2 5.33333ZM4.33333 4.55556C3.90378 4.55556 3.55556 4.90378 3.55556 5.33333C3.55556 5.76288 3.90378 6.11111 4.33333 6.11111C4.76288 6.11111 5.11111 5.76288 5.11111 5.33333C5.11111 4.90378 4.76288 4.55556 4.33333 4.55556ZM13.6667 9.22222C13.2371 9.22222 12.8889 9.57043 12.8889 10C12.8889 10.4296 13.2371 10.7778 13.6667 10.7778C14.0962 10.7778 14.4444 10.4296 14.4444 10C14.4444 9.57043 14.0962 9.22222 13.6667 9.22222ZM9 13.8889C8.57043 13.8889 8.22222 14.2371 8.22222 14.6667C8.22222 15.0962 8.57043 15.4444 9 15.4444C9.42957 15.4444 9.77778 15.0962 9.77778 14.6667C9.77778 14.2371 9.42957 13.8889 9 13.8889Z"
+										fill="black" />
+								</g>
+							</svg>
+
+						</div>
+					</div>
+					<div class="line line_mobile"></div>
+					<div class="catalog-grid__grid">
+						<div class="catalog-grid__item product-card">
+							<div class="product-card__header">
+								<div class="product-card__header-info">
+									<svg width="10" height="9" viewBox="0 0 10 9" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.4 2.82728L0 4.20001L4 8.13637L10 2.23637L8.6 0.863647L4 5.38183L1.4 2.82728Z"
+											fill="#0FB800" />
+									</svg>
+									В наличии мало
+								</div>
+								<div class="product-card__header-btns">
+									<div class="product-card__header-btn">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M14.0933 4.59766C16.6906 4.59766 18.4358 7.06386 18.4358 9.36455C18.4358 14.0239 11.1928 17.839 11.0617 17.839C10.9306 17.839 3.6875 14.0239 3.6875 9.36455C3.6875 7.06386 5.43272 4.59766 8.03007 4.59766C9.52129 4.59766 10.4963 5.35076 11.0617 6.01283C11.627 5.35076 12.602 4.59766 14.0933 4.59766Z"
+												stroke="#BA0E23" stroke-width="1.9" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+
+									</div>
+									<div class="product-card__header-btn select"><svg width="21" height="16"
+											viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M1.37891 10.6833C1.37891 10.0262 1.91162 9.49346 2.56876 9.49346H3.75862C4.41575 9.49346 4.94847 10.0262 4.94847 10.6833V13.6579C4.94847 14.3151 4.41575 14.8478 3.75862 14.8478H2.56876C1.91162 14.8478 1.37891 14.3151 1.37891 13.6579V10.6833Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M8.51804 2.94925C8.51804 2.29212 9.05075 1.7594 9.70789 1.7594H10.8977C11.5549 1.7594 12.0876 2.29212 12.0876 2.94925V13.6579C12.0876 14.3151 11.5549 14.8478 10.8977 14.8478H9.70789C9.05075 14.8478 8.51804 14.3151 8.51804 13.6579V2.94925Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M15.6572 7.11375C15.6572 6.45661 16.1899 5.92389 16.847 5.92389H18.0369C18.694 5.92389 19.2267 6.45661 19.2267 7.11375V13.6579C19.2267 14.3151 18.694 14.8478 18.0369 14.8478H16.847C16.1899 14.8478 15.6572 14.3151 15.6572 13.6579V7.11375Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__img move-slider__container">
+								<img src="/img/main/promo1.jpg" alt="">
+								<img src="/img/main/promo2.jpg" alt="">
+							</div>
+							<div class="product-card__info">
+								<div class="product-card__article">
+									Арт.: PA_MICRO_120
+								</div>
+								<div class="product-card__title">
+									Микродозинг пантерного мухомора
+								</div>
+								<div class="product-card__price-block">
+									<div class="product-card__price">
+										3 150 ₽<span> / шт.</span>
+									</div>
+									<div class="product-card__rate">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M16.0267 18.8993L11.7755 16.2391L7.52422 18.8993C7.36978 18.9972 7.17056 18.9897 7.02184 18.8818C6.87354 18.7743 6.80552 18.5874 6.85027 18.4096L8.06652 13.5441L4.26809 10.3236C4.12766 10.206 4.07282 10.0147 4.12943 9.84051C4.18604 9.66589 4.34312 9.54347 4.52565 9.53074L9.48334 9.18454L11.3586 4.53315C11.4964 4.19354 12.0545 4.19354 12.1923 4.53315L14.0676 9.18454L19.0253 9.53074C19.2078 9.54347 19.3649 9.66589 19.4215 9.84051C19.4781 10.0147 19.4233 10.206 19.2828 10.3236L15.4844 13.5442L16.7006 18.4097C16.7454 18.5874 16.6774 18.7743 16.529 18.8818C16.3773 18.9921 16.1786 18.9945 16.0267 18.8993Z"
+												fill="#FFB800" />
+										</svg>
+										4.8 <span>(10 отзывов)</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__btn-block">
+								<div class="product-card__select">
+									<div class="product-card__select-title">
+										Количество капсул
+									</div>
+									<div class="product-card__tab-block tabs tabs_small">
+										<input type="radio" name="product-card-promo_article1"
+											id="product-card-catalog__article1_30" checked>
+										<label for="product-card-catalog__article1_30">30</label>
+										<input type="radio" name="product-card-promo_article1"
+											id="product-card-catalog__article1_60">
+										<label for="product-card-catalog__article1_60">60</label>
+										<input type="radio" name="product-card-promo_article1"
+											id="product-card-catalog__article1_120">
+										<label for="product-card-catalog__article1_120">120</label>
+									</div>
+								</div>
+								<div class="product-card__btn btn"> в корзину</div>
+							</div>
+						</div>
+						<div class="catalog-grid__item product-card">
+							<div class="product-card__header">
+								<div class="product-card__header-info">
+									<svg width="10" height="9" viewBox="0 0 10 9" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.4 2.82728L0 4.20001L4 8.13637L10 2.23637L8.6 0.863647L4 5.38183L1.4 2.82728Z"
+											fill="#0FB800" />
+									</svg>
+									В наличии мало
+								</div>
+								<div class="product-card__header-btns">
+									<div class="product-card__header-btn select">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M14.0933 4.59766C16.6906 4.59766 18.4358 7.06386 18.4358 9.36455C18.4358 14.0239 11.1928 17.839 11.0617 17.839C10.9306 17.839 3.6875 14.0239 3.6875 9.36455C3.6875 7.06386 5.43272 4.59766 8.03007 4.59766C9.52129 4.59766 10.4963 5.35076 11.0617 6.01283C11.627 5.35076 12.602 4.59766 14.0933 4.59766Z"
+												stroke="#BA0E23" stroke-width="1.9" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+
+									</div>
+									<div class="product-card__header-btn"><svg width="21" height="16"
+											viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M1.37891 10.6833C1.37891 10.0262 1.91162 9.49346 2.56876 9.49346H3.75862C4.41575 9.49346 4.94847 10.0262 4.94847 10.6833V13.6579C4.94847 14.3151 4.41575 14.8478 3.75862 14.8478H2.56876C1.91162 14.8478 1.37891 14.3151 1.37891 13.6579V10.6833Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M8.51804 2.94925C8.51804 2.29212 9.05075 1.7594 9.70789 1.7594H10.8977C11.5549 1.7594 12.0876 2.29212 12.0876 2.94925V13.6579C12.0876 14.3151 11.5549 14.8478 10.8977 14.8478H9.70789C9.05075 14.8478 8.51804 14.3151 8.51804 13.6579V2.94925Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M15.6572 7.11375C15.6572 6.45661 16.1899 5.92389 16.847 5.92389H18.0369C18.694 5.92389 19.2267 6.45661 19.2267 7.11375V13.6579C19.2267 14.3151 18.694 14.8478 18.0369 14.8478H16.847C16.1899 14.8478 15.6572 14.3151 15.6572 13.6579V7.11375Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__img move-slider__container">
+								<img src="/img/main/promo1.jpg" alt="">
+								<img src="/img/main/promo2.jpg" alt="">
+							</div>
+							<div class="product-card__info">
+								<div class="product-card__article">
+									Арт.: PA_MICRO_120
+								</div>
+								<div class="product-card__title">
+									Микродозинг пантерного мухомора
+								</div>
+								<div class="product-card__price-block">
+									<div class="product-card__price">
+										3 150 ₽<span> / шт.</span>
+									</div>
+									<div class="product-card__rate">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M16.0267 18.8993L11.7755 16.2391L7.52422 18.8993C7.36978 18.9972 7.17056 18.9897 7.02184 18.8818C6.87354 18.7743 6.80552 18.5874 6.85027 18.4096L8.06652 13.5441L4.26809 10.3236C4.12766 10.206 4.07282 10.0147 4.12943 9.84051C4.18604 9.66589 4.34312 9.54347 4.52565 9.53074L9.48334 9.18454L11.3586 4.53315C11.4964 4.19354 12.0545 4.19354 12.1923 4.53315L14.0676 9.18454L19.0253 9.53074C19.2078 9.54347 19.3649 9.66589 19.4215 9.84051C19.4781 10.0147 19.4233 10.206 19.2828 10.3236L15.4844 13.5442L16.7006 18.4097C16.7454 18.5874 16.6774 18.7743 16.529 18.8818C16.3773 18.9921 16.1786 18.9945 16.0267 18.8993Z"
+												fill="#FFB800" />
+										</svg>
+										4.8 <span>(10 отзывов)</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__btn-block">
+								<div class="product-card__select">
+									<div class="product-card__select-title">
+										Количество капсул
+									</div>
+									<div class="product-card__tab-block tabs tabs_small">
+										<input type="radio" name="product-card-promo_article2"
+											id="product-card-catalog__article2_30" checked>
+										<label for="product-card-catalog__article2_30">30</label>
+										<input type="radio" name="product-card-promo_article2"
+											id="product-card-catalog__article2_60">
+										<label for="product-card-catalog__article2_60">60</label>
+										<input type="radio" name="product-card-promo_article2"
+											id="product-card-catalog__article2_120">
+										<label for="product-card-catalog__article2_120">120</label>
+									</div>
+								</div>
+								<div class="product-card__btn btn"> в корзину</div>
+							</div>
+						</div>
+						<div class="catalog-grid__item product-card">
+							<div class="product-card__header">
+								<div class="product-card__header-info">
+									<svg width="10" height="9" viewBox="0 0 10 9" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.4 2.82728L0 4.20001L4 8.13637L10 2.23637L8.6 0.863647L4 5.38183L1.4 2.82728Z"
+											fill="#0FB800" />
+									</svg>
+									В наличии мало
+								</div>
+								<div class="product-card__header-btns">
+									<div class="product-card__header-btn">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M14.0933 4.59766C16.6906 4.59766 18.4358 7.06386 18.4358 9.36455C18.4358 14.0239 11.1928 17.839 11.0617 17.839C10.9306 17.839 3.6875 14.0239 3.6875 9.36455C3.6875 7.06386 5.43272 4.59766 8.03007 4.59766C9.52129 4.59766 10.4963 5.35076 11.0617 6.01283C11.627 5.35076 12.602 4.59766 14.0933 4.59766Z"
+												stroke="#BA0E23" stroke-width="1.9" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+
+									</div>
+									<div class="product-card__header-btn"><svg width="21" height="16"
+											viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M1.37891 10.6833C1.37891 10.0262 1.91162 9.49346 2.56876 9.49346H3.75862C4.41575 9.49346 4.94847 10.0262 4.94847 10.6833V13.6579C4.94847 14.3151 4.41575 14.8478 3.75862 14.8478H2.56876C1.91162 14.8478 1.37891 14.3151 1.37891 13.6579V10.6833Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M8.51804 2.94925C8.51804 2.29212 9.05075 1.7594 9.70789 1.7594H10.8977C11.5549 1.7594 12.0876 2.29212 12.0876 2.94925V13.6579C12.0876 14.3151 11.5549 14.8478 10.8977 14.8478H9.70789C9.05075 14.8478 8.51804 14.3151 8.51804 13.6579V2.94925Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M15.6572 7.11375C15.6572 6.45661 16.1899 5.92389 16.847 5.92389H18.0369C18.694 5.92389 19.2267 6.45661 19.2267 7.11375V13.6579C19.2267 14.3151 18.694 14.8478 18.0369 14.8478H16.847C16.1899 14.8478 15.6572 14.3151 15.6572 13.6579V7.11375Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__img move-slider__container">
+								<img src="/img/main/promo1.jpg" alt="">
+								<img src="/img/main/promo2.jpg" alt="">
+							</div>
+							<div class="product-card__info">
+								<div class="product-card__article">
+									Арт.: PA_MICRO_120
+								</div>
+								<div class="product-card__title">
+									Микродозинг пантерного мухомора
+								</div>
+								<div class="product-card__price-block">
+									<div class="product-card__price">
+										3 150 ₽<span> / шт.</span>
+									</div>
+									<div class="product-card__rate">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M16.0267 18.8993L11.7755 16.2391L7.52422 18.8993C7.36978 18.9972 7.17056 18.9897 7.02184 18.8818C6.87354 18.7743 6.80552 18.5874 6.85027 18.4096L8.06652 13.5441L4.26809 10.3236C4.12766 10.206 4.07282 10.0147 4.12943 9.84051C4.18604 9.66589 4.34312 9.54347 4.52565 9.53074L9.48334 9.18454L11.3586 4.53315C11.4964 4.19354 12.0545 4.19354 12.1923 4.53315L14.0676 9.18454L19.0253 9.53074C19.2078 9.54347 19.3649 9.66589 19.4215 9.84051C19.4781 10.0147 19.4233 10.206 19.2828 10.3236L15.4844 13.5442L16.7006 18.4097C16.7454 18.5874 16.6774 18.7743 16.529 18.8818C16.3773 18.9921 16.1786 18.9945 16.0267 18.8993Z"
+												fill="#FFB800" />
+										</svg>
+										4.8 <span>(10 отзывов)</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__btn-block">
+								<div class="product-card__select">
+									<div class="product-card__select-title">
+										Количество капсул
+									</div>
+									<div class="product-card__tab-block tabs tabs_small">
+										<input type="radio" name="product-card-promo_article3"
+											id="product-card-catalog__article3_30" checked>
+										<label for="product-card-catalog__article3_30">30</label>
+										<input type="radio" name="product-card-promo_article3"
+											id="product-card-catalog__article3_60">
+										<label for="product-card-catalog__article3_60">60</label>
+										<input type="radio" name="product-card-promo_article3"
+											id="product-card-catalog__article3_120">
+										<label for="product-card-catalog__article3_120">120</label>
+									</div>
+								</div>
+								<div class="product-card__btn btn"> в корзину</div>
+							</div>
+						</div>
+						<div class="catalog-grid__item product-card">
+							<div class="product-card__header">
+								<div class="product-card__header-info">
+									<svg width="10" height="9" viewBox="0 0 10 9" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.4 2.82728L0 4.20001L4 8.13637L10 2.23637L8.6 0.863647L4 5.38183L1.4 2.82728Z"
+											fill="#0FB800" />
+									</svg>
+									В наличии мало
+								</div>
+								<div class="product-card__header-btns">
+									<div class="product-card__header-btn">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M14.0933 4.59766C16.6906 4.59766 18.4358 7.06386 18.4358 9.36455C18.4358 14.0239 11.1928 17.839 11.0617 17.839C10.9306 17.839 3.6875 14.0239 3.6875 9.36455C3.6875 7.06386 5.43272 4.59766 8.03007 4.59766C9.52129 4.59766 10.4963 5.35076 11.0617 6.01283C11.627 5.35076 12.602 4.59766 14.0933 4.59766Z"
+												stroke="#BA0E23" stroke-width="1.9" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+
+									</div>
+									<div class="product-card__header-btn"><svg width="21" height="16"
+											viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M1.37891 10.6833C1.37891 10.0262 1.91162 9.49346 2.56876 9.49346H3.75862C4.41575 9.49346 4.94847 10.0262 4.94847 10.6833V13.6579C4.94847 14.3151 4.41575 14.8478 3.75862 14.8478H2.56876C1.91162 14.8478 1.37891 14.3151 1.37891 13.6579V10.6833Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M8.51804 2.94925C8.51804 2.29212 9.05075 1.7594 9.70789 1.7594H10.8977C11.5549 1.7594 12.0876 2.29212 12.0876 2.94925V13.6579C12.0876 14.3151 11.5549 14.8478 10.8977 14.8478H9.70789C9.05075 14.8478 8.51804 14.3151 8.51804 13.6579V2.94925Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M15.6572 7.11375C15.6572 6.45661 16.1899 5.92389 16.847 5.92389H18.0369C18.694 5.92389 19.2267 6.45661 19.2267 7.11375V13.6579C19.2267 14.3151 18.694 14.8478 18.0369 14.8478H16.847C16.1899 14.8478 15.6572 14.3151 15.6572 13.6579V7.11375Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__img move-slider__container">
+								<img src="/img/main/promo1.jpg" alt="">
+								<img src="/img/main/promo2.jpg" alt="">
+							</div>
+							<div class="product-card__info">
+								<div class="product-card__article">
+									Арт.: PA_MICRO_120
+								</div>
+								<div class="product-card__title">
+									Микродозинг пантерного мухомора
+								</div>
+								<div class="product-card__price-block">
+									<div class="product-card__price">
+										3 150 ₽<span> / шт.</span>
+									</div>
+									<div class="product-card__rate">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M16.0267 18.8993L11.7755 16.2391L7.52422 18.8993C7.36978 18.9972 7.17056 18.9897 7.02184 18.8818C6.87354 18.7743 6.80552 18.5874 6.85027 18.4096L8.06652 13.5441L4.26809 10.3236C4.12766 10.206 4.07282 10.0147 4.12943 9.84051C4.18604 9.66589 4.34312 9.54347 4.52565 9.53074L9.48334 9.18454L11.3586 4.53315C11.4964 4.19354 12.0545 4.19354 12.1923 4.53315L14.0676 9.18454L19.0253 9.53074C19.2078 9.54347 19.3649 9.66589 19.4215 9.84051C19.4781 10.0147 19.4233 10.206 19.2828 10.3236L15.4844 13.5442L16.7006 18.4097C16.7454 18.5874 16.6774 18.7743 16.529 18.8818C16.3773 18.9921 16.1786 18.9945 16.0267 18.8993Z"
+												fill="#FFB800" />
+										</svg>
+										4.8 <span>(10 отзывов)</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__btn-block">
+								<div class="product-card__select">
+									<div class="product-card__select-title">
+										Количество капсул
+									</div>
+									<div class="product-card__tab-block tabs tabs_small">
+										<input type="radio" name="product-card-promo_article4"
+											id="product-card-catalog__article4_30" checked>
+										<label for="product-card-catalog__article4_30">30</label>
+										<input type="radio" name="product-card-promo_article4"
+											id="product-card-catalog__article4_60">
+										<label for="product-card-catalog__article4_60">60</label>
+										<input type="radio" name="product-card-promo_article4"
+											id="product-card-catalog__article4_120">
+										<label for="product-card-catalog__article4_120">120</label>
+									</div>
+								</div>
+								<div class="product-card__btn btn"> в корзину</div>
+							</div>
+						</div>
+						<div class="catalog-grid__item product-card">
+							<div class="product-card__header">
+								<div class="product-card__header-info">
+									<svg width="10" height="9" viewBox="0 0 10 9" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.4 2.82728L0 4.20001L4 8.13637L10 2.23637L8.6 0.863647L4 5.38183L1.4 2.82728Z"
+											fill="#0FB800" />
+									</svg>
+									В наличии мало
+								</div>
+								<div class="product-card__header-btns">
+									<div class="product-card__header-btn">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M14.0933 4.59766C16.6906 4.59766 18.4358 7.06386 18.4358 9.36455C18.4358 14.0239 11.1928 17.839 11.0617 17.839C10.9306 17.839 3.6875 14.0239 3.6875 9.36455C3.6875 7.06386 5.43272 4.59766 8.03007 4.59766C9.52129 4.59766 10.4963 5.35076 11.0617 6.01283C11.627 5.35076 12.602 4.59766 14.0933 4.59766Z"
+												stroke="#BA0E23" stroke-width="1.9" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+
+									</div>
+									<div class="product-card__header-btn"><svg width="21" height="16"
+											viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M1.37891 10.6833C1.37891 10.0262 1.91162 9.49346 2.56876 9.49346H3.75862C4.41575 9.49346 4.94847 10.0262 4.94847 10.6833V13.6579C4.94847 14.3151 4.41575 14.8478 3.75862 14.8478H2.56876C1.91162 14.8478 1.37891 14.3151 1.37891 13.6579V10.6833Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M8.51804 2.94925C8.51804 2.29212 9.05075 1.7594 9.70789 1.7594H10.8977C11.5549 1.7594 12.0876 2.29212 12.0876 2.94925V13.6579C12.0876 14.3151 11.5549 14.8478 10.8977 14.8478H9.70789C9.05075 14.8478 8.51804 14.3151 8.51804 13.6579V2.94925Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M15.6572 7.11375C15.6572 6.45661 16.1899 5.92389 16.847 5.92389H18.0369C18.694 5.92389 19.2267 6.45661 19.2267 7.11375V13.6579C19.2267 14.3151 18.694 14.8478 18.0369 14.8478H16.847C16.1899 14.8478 15.6572 14.3151 15.6572 13.6579V7.11375Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__img move-slider__container">
+								<img src="/img/main/promo1.jpg" alt="">
+								<img src="/img/main/promo2.jpg" alt="">
+							</div>
+							<div class="product-card__info">
+								<div class="product-card__article">
+									Арт.: PA_MICRO_120
+								</div>
+								<div class="product-card__title">
+									Микродозинг пантерного мухомора
+								</div>
+								<div class="product-card__price-block">
+									<div class="product-card__price">
+										3 150 ₽<span> / шт.</span>
+									</div>
+									<div class="product-card__rate">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M16.0267 18.8993L11.7755 16.2391L7.52422 18.8993C7.36978 18.9972 7.17056 18.9897 7.02184 18.8818C6.87354 18.7743 6.80552 18.5874 6.85027 18.4096L8.06652 13.5441L4.26809 10.3236C4.12766 10.206 4.07282 10.0147 4.12943 9.84051C4.18604 9.66589 4.34312 9.54347 4.52565 9.53074L9.48334 9.18454L11.3586 4.53315C11.4964 4.19354 12.0545 4.19354 12.1923 4.53315L14.0676 9.18454L19.0253 9.53074C19.2078 9.54347 19.3649 9.66589 19.4215 9.84051C19.4781 10.0147 19.4233 10.206 19.2828 10.3236L15.4844 13.5442L16.7006 18.4097C16.7454 18.5874 16.6774 18.7743 16.529 18.8818C16.3773 18.9921 16.1786 18.9945 16.0267 18.8993Z"
+												fill="#FFB800" />
+										</svg>
+										4.8 <span>(10 отзывов)</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__btn-block">
+								<div class="product-card__select">
+									<div class="product-card__select-title">
+										Количество капсул
+									</div>
+									<div class="product-card__tab-block tabs tabs_small">
+										<input type="radio" name="product-card-promo_article5"
+											id="product-card-catalog__article5_30" checked>
+										<label for="product-card-catalog__article5_30">30</label>
+										<input type="radio" name="product-card-promo_article5"
+											id="product-card-catalog__article5_60">
+										<label for="product-card-catalog__article5_60">60</label>
+										<input type="radio" name="product-card-promo_article5"
+											id="product-card-catalog__article5_120">
+										<label for="product-card-catalog__article5_120">120</label>
+									</div>
+								</div>
+								<div class="product-card__btn btn"> в корзину</div>
+							</div>
+						</div>
+						<div class="catalog-grid__item product-card">
+							<div class="product-card__header">
+								<div class="product-card__header-info">
+									<svg width="10" height="9" viewBox="0 0 10 9" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.4 2.82728L0 4.20001L4 8.13637L10 2.23637L8.6 0.863647L4 5.38183L1.4 2.82728Z"
+											fill="#0FB800" />
+									</svg>
+									В наличии мало
+								</div>
+								<div class="product-card__header-btns">
+									<div class="product-card__header-btn">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M14.0933 4.59766C16.6906 4.59766 18.4358 7.06386 18.4358 9.36455C18.4358 14.0239 11.1928 17.839 11.0617 17.839C10.9306 17.839 3.6875 14.0239 3.6875 9.36455C3.6875 7.06386 5.43272 4.59766 8.03007 4.59766C9.52129 4.59766 10.4963 5.35076 11.0617 6.01283C11.627 5.35076 12.602 4.59766 14.0933 4.59766Z"
+												stroke="#BA0E23" stroke-width="1.9" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+
+									</div>
+									<div class="product-card__header-btn"><svg width="21" height="16"
+											viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M1.37891 10.6833C1.37891 10.0262 1.91162 9.49346 2.56876 9.49346H3.75862C4.41575 9.49346 4.94847 10.0262 4.94847 10.6833V13.6579C4.94847 14.3151 4.41575 14.8478 3.75862 14.8478H2.56876C1.91162 14.8478 1.37891 14.3151 1.37891 13.6579V10.6833Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M8.51804 2.94925C8.51804 2.29212 9.05075 1.7594 9.70789 1.7594H10.8977C11.5549 1.7594 12.0876 2.29212 12.0876 2.94925V13.6579C12.0876 14.3151 11.5549 14.8478 10.8977 14.8478H9.70789C9.05075 14.8478 8.51804 14.3151 8.51804 13.6579V2.94925Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M15.6572 7.11375C15.6572 6.45661 16.1899 5.92389 16.847 5.92389H18.0369C18.694 5.92389 19.2267 6.45661 19.2267 7.11375V13.6579C19.2267 14.3151 18.694 14.8478 18.0369 14.8478H16.847C16.1899 14.8478 15.6572 14.3151 15.6572 13.6579V7.11375Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__img move-slider__container">
+								<img src="/img/main/promo1.jpg" alt="">
+								<img src="/img/main/promo2.jpg" alt="">
+							</div>
+							<div class="product-card__info">
+								<div class="product-card__article">
+									Арт.: PA_MICRO_120
+								</div>
+								<div class="product-card__title">
+									Микродозинг пантерного мухомора
+								</div>
+								<div class="product-card__price-block">
+									<div class="product-card__price">
+										3 150 ₽<span> / шт.</span>
+									</div>
+									<div class="product-card__rate">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M16.0267 18.8993L11.7755 16.2391L7.52422 18.8993C7.36978 18.9972 7.17056 18.9897 7.02184 18.8818C6.87354 18.7743 6.80552 18.5874 6.85027 18.4096L8.06652 13.5441L4.26809 10.3236C4.12766 10.206 4.07282 10.0147 4.12943 9.84051C4.18604 9.66589 4.34312 9.54347 4.52565 9.53074L9.48334 9.18454L11.3586 4.53315C11.4964 4.19354 12.0545 4.19354 12.1923 4.53315L14.0676 9.18454L19.0253 9.53074C19.2078 9.54347 19.3649 9.66589 19.4215 9.84051C19.4781 10.0147 19.4233 10.206 19.2828 10.3236L15.4844 13.5442L16.7006 18.4097C16.7454 18.5874 16.6774 18.7743 16.529 18.8818C16.3773 18.9921 16.1786 18.9945 16.0267 18.8993Z"
+												fill="#FFB800" />
+										</svg>
+										4.8 <span>(10 отзывов)</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__btn-block">
+								<div class="product-card__select">
+									<div class="product-card__select-title">
+										Количество капсул
+									</div>
+									<div class="product-card__tab-block tabs tabs_small">
+										<input type="radio" name="product-card-promo_article6"
+											id="product-card-catalog__article6_30" checked>
+										<label for="product-card-catalog__article6_30">30</label>
+										<input type="radio" name="product-card-promo_article6"
+											id="product-card-catalog__article6_60">
+										<label for="product-card-catalog__article6_60">60</label>
+										<input type="radio" name="product-card-promo_article6"
+											id="product-card-catalog__article6_120">
+										<label for="product-card-catalog__article6_120">120</label>
+									</div>
+								</div>
+								<div class="product-card__btn btn"> в корзину</div>
+							</div>
+						</div>
+						<div class="catalog-grid__item product-card">
+							<div class="product-card__header">
+								<div class="product-card__header-info">
+									<svg width="10" height="9" viewBox="0 0 10 9" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.4 2.82728L0 4.20001L4 8.13637L10 2.23637L8.6 0.863647L4 5.38183L1.4 2.82728Z"
+											fill="#0FB800" />
+									</svg>
+									В наличии мало
+								</div>
+								<div class="product-card__header-btns">
+									<div class="product-card__header-btn">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M14.0933 4.59766C16.6906 4.59766 18.4358 7.06386 18.4358 9.36455C18.4358 14.0239 11.1928 17.839 11.0617 17.839C10.9306 17.839 3.6875 14.0239 3.6875 9.36455C3.6875 7.06386 5.43272 4.59766 8.03007 4.59766C9.52129 4.59766 10.4963 5.35076 11.0617 6.01283C11.627 5.35076 12.602 4.59766 14.0933 4.59766Z"
+												stroke="#BA0E23" stroke-width="1.9" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+
+									</div>
+									<div class="product-card__header-btn"><svg width="21" height="16"
+											viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M1.37891 10.6833C1.37891 10.0262 1.91162 9.49346 2.56876 9.49346H3.75862C4.41575 9.49346 4.94847 10.0262 4.94847 10.6833V13.6579C4.94847 14.3151 4.41575 14.8478 3.75862 14.8478H2.56876C1.91162 14.8478 1.37891 14.3151 1.37891 13.6579V10.6833Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M8.51804 2.94925C8.51804 2.29212 9.05075 1.7594 9.70789 1.7594H10.8977C11.5549 1.7594 12.0876 2.29212 12.0876 2.94925V13.6579C12.0876 14.3151 11.5549 14.8478 10.8977 14.8478H9.70789C9.05075 14.8478 8.51804 14.3151 8.51804 13.6579V2.94925Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M15.6572 7.11375C15.6572 6.45661 16.1899 5.92389 16.847 5.92389H18.0369C18.694 5.92389 19.2267 6.45661 19.2267 7.11375V13.6579C19.2267 14.3151 18.694 14.8478 18.0369 14.8478H16.847C16.1899 14.8478 15.6572 14.3151 15.6572 13.6579V7.11375Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__img move-slider__container">
+								<img src="/img/main/promo1.jpg" alt="">
+								<img src="/img/main/promo2.jpg" alt="">
+							</div>
+							<div class="product-card__info">
+								<div class="product-card__article">
+									Арт.: PA_MICRO_120
+								</div>
+								<div class="product-card__title">
+									Микродозинг пантерного мухомора
+								</div>
+								<div class="product-card__price-block">
+									<div class="product-card__price">
+										3 150 ₽<span> / шт.</span>
+									</div>
+									<div class="product-card__rate">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M16.0267 18.8993L11.7755 16.2391L7.52422 18.8993C7.36978 18.9972 7.17056 18.9897 7.02184 18.8818C6.87354 18.7743 6.80552 18.5874 6.85027 18.4096L8.06652 13.5441L4.26809 10.3236C4.12766 10.206 4.07282 10.0147 4.12943 9.84051C4.18604 9.66589 4.34312 9.54347 4.52565 9.53074L9.48334 9.18454L11.3586 4.53315C11.4964 4.19354 12.0545 4.19354 12.1923 4.53315L14.0676 9.18454L19.0253 9.53074C19.2078 9.54347 19.3649 9.66589 19.4215 9.84051C19.4781 10.0147 19.4233 10.206 19.2828 10.3236L15.4844 13.5442L16.7006 18.4097C16.7454 18.5874 16.6774 18.7743 16.529 18.8818C16.3773 18.9921 16.1786 18.9945 16.0267 18.8993Z"
+												fill="#FFB800" />
+										</svg>
+										4.8 <span>(10 отзывов)</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__btn-block">
+								<div class="product-card__select">
+									<div class="product-card__select-title">
+										Количество капсул
+									</div>
+									<div class="product-card__tab-block tabs tabs_small">
+										<input type="radio" name="product-card-promo_article7"
+											id="product-card-catalog__article7_30" checked>
+										<label for="product-card-catalog__article7_30">30</label>
+										<input type="radio" name="product-card-promo_article7"
+											id="product-card-catalog__article7_60">
+										<label for="product-card-catalog__article7_60">60</label>
+										<input type="radio" name="product-card-promo_article7"
+											id="product-card-catalog__article7_120">
+										<label for="product-card-catalog__article7_120">120</label>
+									</div>
+								</div>
+								<div class="product-card__btn btn"> в корзину</div>
+							</div>
+						</div>
+						<div class="catalog-grid__item product-card">
+							<div class="product-card__header">
+								<div class="product-card__header-info">
+									<svg width="10" height="9" viewBox="0 0 10 9" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.4 2.82728L0 4.20001L4 8.13637L10 2.23637L8.6 0.863647L4 5.38183L1.4 2.82728Z"
+											fill="#0FB800" />
+									</svg>
+									В наличии мало
+								</div>
+								<div class="product-card__header-btns">
+									<div class="product-card__header-btn">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M14.0933 4.59766C16.6906 4.59766 18.4358 7.06386 18.4358 9.36455C18.4358 14.0239 11.1928 17.839 11.0617 17.839C10.9306 17.839 3.6875 14.0239 3.6875 9.36455C3.6875 7.06386 5.43272 4.59766 8.03007 4.59766C9.52129 4.59766 10.4963 5.35076 11.0617 6.01283C11.627 5.35076 12.602 4.59766 14.0933 4.59766Z"
+												stroke="#BA0E23" stroke-width="1.9" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+
+									</div>
+									<div class="product-card__header-btn"><svg width="21" height="16"
+											viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M1.37891 10.6833C1.37891 10.0262 1.91162 9.49346 2.56876 9.49346H3.75862C4.41575 9.49346 4.94847 10.0262 4.94847 10.6833V13.6579C4.94847 14.3151 4.41575 14.8478 3.75862 14.8478H2.56876C1.91162 14.8478 1.37891 14.3151 1.37891 13.6579V10.6833Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M8.51804 2.94925C8.51804 2.29212 9.05075 1.7594 9.70789 1.7594H10.8977C11.5549 1.7594 12.0876 2.29212 12.0876 2.94925V13.6579C12.0876 14.3151 11.5549 14.8478 10.8977 14.8478H9.70789C9.05075 14.8478 8.51804 14.3151 8.51804 13.6579V2.94925Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M15.6572 7.11375C15.6572 6.45661 16.1899 5.92389 16.847 5.92389H18.0369C18.694 5.92389 19.2267 6.45661 19.2267 7.11375V13.6579C19.2267 14.3151 18.694 14.8478 18.0369 14.8478H16.847C16.1899 14.8478 15.6572 14.3151 15.6572 13.6579V7.11375Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__img move-slider__container">
+								<img src="/img/main/promo1.jpg" alt="">
+								<img src="/img/main/promo2.jpg" alt="">
+							</div>
+							<div class="product-card__info">
+								<div class="product-card__article">
+									Арт.: PA_MICRO_120
+								</div>
+								<div class="product-card__title">
+									Микродозинг пантерного мухомора
+								</div>
+								<div class="product-card__price-block">
+									<div class="product-card__price">
+										3 150 ₽<span> / шт.</span>
+									</div>
+									<div class="product-card__rate">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M16.0267 18.8993L11.7755 16.2391L7.52422 18.8993C7.36978 18.9972 7.17056 18.9897 7.02184 18.8818C6.87354 18.7743 6.80552 18.5874 6.85027 18.4096L8.06652 13.5441L4.26809 10.3236C4.12766 10.206 4.07282 10.0147 4.12943 9.84051C4.18604 9.66589 4.34312 9.54347 4.52565 9.53074L9.48334 9.18454L11.3586 4.53315C11.4964 4.19354 12.0545 4.19354 12.1923 4.53315L14.0676 9.18454L19.0253 9.53074C19.2078 9.54347 19.3649 9.66589 19.4215 9.84051C19.4781 10.0147 19.4233 10.206 19.2828 10.3236L15.4844 13.5442L16.7006 18.4097C16.7454 18.5874 16.6774 18.7743 16.529 18.8818C16.3773 18.9921 16.1786 18.9945 16.0267 18.8993Z"
+												fill="#FFB800" />
+										</svg>
+										4.8 <span>(10 отзывов)</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__btn-block">
+								<div class="product-card__select">
+									<div class="product-card__select-title">
+										Количество капсул
+									</div>
+									<div class="product-card__tab-block tabs tabs_small">
+										<input type="radio" name="product-card-promo_article8"
+											id="product-card-catalog__article8_30" checked>
+										<label for="product-card-catalog__article8_30">30</label>
+										<input type="radio" name="product-card-promo_article8"
+											id="product-card-catalog__article8_60">
+										<label for="product-card-catalog__article8_60">60</label>
+										<input type="radio" name="product-card-promo_article8"
+											id="product-card-catalog__article8_120">
+										<label for="product-card-catalog__article8_120">120</label>
+									</div>
+								</div>
+								<div class="product-card__btn btn"> в корзину</div>
+							</div>
+						</div>
+						<div class="catalog-grid__item product-card">
+							<div class="product-card__header">
+								<div class="product-card__header-info">
+									<svg width="10" height="9" viewBox="0 0 10 9" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.4 2.82728L0 4.20001L4 8.13637L10 2.23637L8.6 0.863647L4 5.38183L1.4 2.82728Z"
+											fill="#0FB800" />
+									</svg>
+									В наличии мало
+								</div>
+								<div class="product-card__header-btns">
+									<div class="product-card__header-btn">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M14.0933 4.59766C16.6906 4.59766 18.4358 7.06386 18.4358 9.36455C18.4358 14.0239 11.1928 17.839 11.0617 17.839C10.9306 17.839 3.6875 14.0239 3.6875 9.36455C3.6875 7.06386 5.43272 4.59766 8.03007 4.59766C9.52129 4.59766 10.4963 5.35076 11.0617 6.01283C11.627 5.35076 12.602 4.59766 14.0933 4.59766Z"
+												stroke="#BA0E23" stroke-width="1.9" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+
+									</div>
+									<div class="product-card__header-btn"><svg width="21" height="16"
+											viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M1.37891 10.6833C1.37891 10.0262 1.91162 9.49346 2.56876 9.49346H3.75862C4.41575 9.49346 4.94847 10.0262 4.94847 10.6833V13.6579C4.94847 14.3151 4.41575 14.8478 3.75862 14.8478H2.56876C1.91162 14.8478 1.37891 14.3151 1.37891 13.6579V10.6833Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M8.51804 2.94925C8.51804 2.29212 9.05075 1.7594 9.70789 1.7594H10.8977C11.5549 1.7594 12.0876 2.29212 12.0876 2.94925V13.6579C12.0876 14.3151 11.5549 14.8478 10.8977 14.8478H9.70789C9.05075 14.8478 8.51804 14.3151 8.51804 13.6579V2.94925Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M15.6572 7.11375C15.6572 6.45661 16.1899 5.92389 16.847 5.92389H18.0369C18.694 5.92389 19.2267 6.45661 19.2267 7.11375V13.6579C19.2267 14.3151 18.694 14.8478 18.0369 14.8478H16.847C16.1899 14.8478 15.6572 14.3151 15.6572 13.6579V7.11375Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__img move-slider__container">
+								<img src="/img/main/promo1.jpg" alt="">
+								<img src="/img/main/promo2.jpg" alt="">
+							</div>
+							<div class="product-card__info">
+								<div class="product-card__article">
+									Арт.: PA_MICRO_120
+								</div>
+								<div class="product-card__title">
+									Микродозинг пантерного мухомора
+								</div>
+								<div class="product-card__price-block">
+									<div class="product-card__price">
+										3 150 ₽<span> / шт.</span>
+									</div>
+									<div class="product-card__rate">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M16.0267 18.8993L11.7755 16.2391L7.52422 18.8993C7.36978 18.9972 7.17056 18.9897 7.02184 18.8818C6.87354 18.7743 6.80552 18.5874 6.85027 18.4096L8.06652 13.5441L4.26809 10.3236C4.12766 10.206 4.07282 10.0147 4.12943 9.84051C4.18604 9.66589 4.34312 9.54347 4.52565 9.53074L9.48334 9.18454L11.3586 4.53315C11.4964 4.19354 12.0545 4.19354 12.1923 4.53315L14.0676 9.18454L19.0253 9.53074C19.2078 9.54347 19.3649 9.66589 19.4215 9.84051C19.4781 10.0147 19.4233 10.206 19.2828 10.3236L15.4844 13.5442L16.7006 18.4097C16.7454 18.5874 16.6774 18.7743 16.529 18.8818C16.3773 18.9921 16.1786 18.9945 16.0267 18.8993Z"
+												fill="#FFB800" />
+										</svg>
+										4.8 <span>(10 отзывов)</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__btn-block">
+								<div class="product-card__select">
+									<div class="product-card__select-title">
+										Количество капсул
+									</div>
+									<div class="product-card__tab-block tabs tabs_small">
+										<input type="radio" name="product-card-promo_article9"
+											id="product-card-catalog__article9_30" checked>
+										<label for="product-card-catalog__article9_30">30</label>
+										<input type="radio" name="product-card-promo_article9"
+											id="product-card-catalog__article9_60">
+										<label for="product-card-catalog__article9_60">60</label>
+										<input type="radio" name="product-card-promo_article9"
+											id="product-card-catalog__article9_120">
+										<label for="product-card-catalog__article9_120">120</label>
+									</div>
+								</div>
+								<div class="product-card__btn btn"> в корзину</div>
+							</div>
+						</div>
+						<div class="catalog-grid__item product-card">
+							<div class="product-card__header">
+								<div class="product-card__header-info">
+									<svg width="10" height="9" viewBox="0 0 10 9" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.4 2.82728L0 4.20001L4 8.13637L10 2.23637L8.6 0.863647L4 5.38183L1.4 2.82728Z"
+											fill="#0FB800" />
+									</svg>
+									В наличии мало
+								</div>
+								<div class="product-card__header-btns">
+									<div class="product-card__header-btn">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M14.0933 4.59766C16.6906 4.59766 18.4358 7.06386 18.4358 9.36455C18.4358 14.0239 11.1928 17.839 11.0617 17.839C10.9306 17.839 3.6875 14.0239 3.6875 9.36455C3.6875 7.06386 5.43272 4.59766 8.03007 4.59766C9.52129 4.59766 10.4963 5.35076 11.0617 6.01283C11.627 5.35076 12.602 4.59766 14.0933 4.59766Z"
+												stroke="#BA0E23" stroke-width="1.9" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+
+									</div>
+									<div class="product-card__header-btn"><svg width="21" height="16"
+											viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M1.37891 10.6833C1.37891 10.0262 1.91162 9.49346 2.56876 9.49346H3.75862C4.41575 9.49346 4.94847 10.0262 4.94847 10.6833V13.6579C4.94847 14.3151 4.41575 14.8478 3.75862 14.8478H2.56876C1.91162 14.8478 1.37891 14.3151 1.37891 13.6579V10.6833Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M8.51804 2.94925C8.51804 2.29212 9.05075 1.7594 9.70789 1.7594H10.8977C11.5549 1.7594 12.0876 2.29212 12.0876 2.94925V13.6579C12.0876 14.3151 11.5549 14.8478 10.8977 14.8478H9.70789C9.05075 14.8478 8.51804 14.3151 8.51804 13.6579V2.94925Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M15.6572 7.11375C15.6572 6.45661 16.1899 5.92389 16.847 5.92389H18.0369C18.694 5.92389 19.2267 6.45661 19.2267 7.11375V13.6579C19.2267 14.3151 18.694 14.8478 18.0369 14.8478H16.847C16.1899 14.8478 15.6572 14.3151 15.6572 13.6579V7.11375Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__img move-slider__container">
+								<img src="/img/main/promo1.jpg" alt="">
+								<img src="/img/main/promo2.jpg" alt="">
+							</div>
+							<div class="product-card__info">
+								<div class="product-card__article">
+									Арт.: PA_MICRO_120
+								</div>
+								<div class="product-card__title">
+									Микродозинг пантерного мухомора
+								</div>
+								<div class="product-card__price-block">
+									<div class="product-card__price">
+										3 150 ₽<span> / шт.</span>
+									</div>
+									<div class="product-card__rate">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M16.0267 18.8993L11.7755 16.2391L7.52422 18.8993C7.36978 18.9972 7.17056 18.9897 7.02184 18.8818C6.87354 18.7743 6.80552 18.5874 6.85027 18.4096L8.06652 13.5441L4.26809 10.3236C4.12766 10.206 4.07282 10.0147 4.12943 9.84051C4.18604 9.66589 4.34312 9.54347 4.52565 9.53074L9.48334 9.18454L11.3586 4.53315C11.4964 4.19354 12.0545 4.19354 12.1923 4.53315L14.0676 9.18454L19.0253 9.53074C19.2078 9.54347 19.3649 9.66589 19.4215 9.84051C19.4781 10.0147 19.4233 10.206 19.2828 10.3236L15.4844 13.5442L16.7006 18.4097C16.7454 18.5874 16.6774 18.7743 16.529 18.8818C16.3773 18.9921 16.1786 18.9945 16.0267 18.8993Z"
+												fill="#FFB800" />
+										</svg>
+										4.8 <span>(10 отзывов)</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__btn-block">
+								<div class="product-card__select">
+									<div class="product-card__select-title">
+										Количество капсул
+									</div>
+									<div class="product-card__tab-block tabs tabs_small">
+										<input type="radio" name="product-card-promo_article10"
+											id="product-card-catalog__article10_30" checked>
+										<label for="product-card-catalog__article10_30">30</label>
+										<input type="radio" name="product-card-promo_article10"
+											id="product-card-catalog__article10_60">
+										<label for="product-card-catalog__article10_60">60</label>
+										<input type="radio" name="product-card-promo_article10"
+											id="product-card-catalog__article10_120">
+										<label for="product-card-catalog__article10_120">120</label>
+									</div>
+								</div>
+								<div class="product-card__btn btn"> в корзину</div>
+							</div>
+						</div>
+						<div class="catalog-grid__item product-card">
+							<div class="product-card__header">
+								<div class="product-card__header-info">
+									<svg width="10" height="9" viewBox="0 0 10 9" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.4 2.82728L0 4.20001L4 8.13637L10 2.23637L8.6 0.863647L4 5.38183L1.4 2.82728Z"
+											fill="#0FB800" />
+									</svg>
+									В наличии мало
+								</div>
+								<div class="product-card__header-btns">
+									<div class="product-card__header-btn">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M14.0933 4.59766C16.6906 4.59766 18.4358 7.06386 18.4358 9.36455C18.4358 14.0239 11.1928 17.839 11.0617 17.839C10.9306 17.839 3.6875 14.0239 3.6875 9.36455C3.6875 7.06386 5.43272 4.59766 8.03007 4.59766C9.52129 4.59766 10.4963 5.35076 11.0617 6.01283C11.627 5.35076 12.602 4.59766 14.0933 4.59766Z"
+												stroke="#BA0E23" stroke-width="1.9" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+
+									</div>
+									<div class="product-card__header-btn"><svg width="21" height="16"
+											viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M1.37891 10.6833C1.37891 10.0262 1.91162 9.49346 2.56876 9.49346H3.75862C4.41575 9.49346 4.94847 10.0262 4.94847 10.6833V13.6579C4.94847 14.3151 4.41575 14.8478 3.75862 14.8478H2.56876C1.91162 14.8478 1.37891 14.3151 1.37891 13.6579V10.6833Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M8.51804 2.94925C8.51804 2.29212 9.05075 1.7594 9.70789 1.7594H10.8977C11.5549 1.7594 12.0876 2.29212 12.0876 2.94925V13.6579C12.0876 14.3151 11.5549 14.8478 10.8977 14.8478H9.70789C9.05075 14.8478 8.51804 14.3151 8.51804 13.6579V2.94925Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M15.6572 7.11375C15.6572 6.45661 16.1899 5.92389 16.847 5.92389H18.0369C18.694 5.92389 19.2267 6.45661 19.2267 7.11375V13.6579C19.2267 14.3151 18.694 14.8478 18.0369 14.8478H16.847C16.1899 14.8478 15.6572 14.3151 15.6572 13.6579V7.11375Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__img move-slider__container">
+								<img src="/img/main/promo1.jpg" alt="">
+								<img src="/img/main/promo2.jpg" alt="">
+							</div>
+							<div class="product-card__info">
+								<div class="product-card__article">
+									Арт.: PA_MICRO_120
+								</div>
+								<div class="product-card__title">
+									Микродозинг пантерного мухомора
+								</div>
+								<div class="product-card__price-block">
+									<div class="product-card__price">
+										3 150 ₽<span> / шт.</span>
+									</div>
+									<div class="product-card__rate">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M16.0267 18.8993L11.7755 16.2391L7.52422 18.8993C7.36978 18.9972 7.17056 18.9897 7.02184 18.8818C6.87354 18.7743 6.80552 18.5874 6.85027 18.4096L8.06652 13.5441L4.26809 10.3236C4.12766 10.206 4.07282 10.0147 4.12943 9.84051C4.18604 9.66589 4.34312 9.54347 4.52565 9.53074L9.48334 9.18454L11.3586 4.53315C11.4964 4.19354 12.0545 4.19354 12.1923 4.53315L14.0676 9.18454L19.0253 9.53074C19.2078 9.54347 19.3649 9.66589 19.4215 9.84051C19.4781 10.0147 19.4233 10.206 19.2828 10.3236L15.4844 13.5442L16.7006 18.4097C16.7454 18.5874 16.6774 18.7743 16.529 18.8818C16.3773 18.9921 16.1786 18.9945 16.0267 18.8993Z"
+												fill="#FFB800" />
+										</svg>
+										4.8 <span>(10 отзывов)</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__btn-block">
+								<div class="product-card__select">
+									<div class="product-card__select-title">
+										Количество капсул
+									</div>
+									<div class="product-card__tab-block tabs tabs_small">
+										<input type="radio" name="product-card-promo_article11"
+											id="product-card-catalog__article11_30" checked>
+										<label for="product-card-catalog__article11_30">30</label>
+										<input type="radio" name="product-card-promo_article11"
+											id="product-card-catalog__article11_60">
+										<label for="product-card-catalog__article11_60">60</label>
+										<input type="radio" name="product-card-promo_article11"
+											id="product-card-catalog__article11_120">
+										<label for="product-card-catalog__article11_120">120</label>
+									</div>
+								</div>
+								<div class="product-card__btn btn"> в корзину</div>
+							</div>
+						</div>
+						<div class="catalog-grid__item product-card">
+							<div class="product-card__header">
+								<div class="product-card__header-info">
+									<svg width="10" height="9" viewBox="0 0 10 9" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.4 2.82728L0 4.20001L4 8.13637L10 2.23637L8.6 0.863647L4 5.38183L1.4 2.82728Z"
+											fill="#0FB800" />
+									</svg>
+									В наличии мало
+								</div>
+								<div class="product-card__header-btns">
+									<div class="product-card__header-btn">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M14.0933 4.59766C16.6906 4.59766 18.4358 7.06386 18.4358 9.36455C18.4358 14.0239 11.1928 17.839 11.0617 17.839C10.9306 17.839 3.6875 14.0239 3.6875 9.36455C3.6875 7.06386 5.43272 4.59766 8.03007 4.59766C9.52129 4.59766 10.4963 5.35076 11.0617 6.01283C11.627 5.35076 12.602 4.59766 14.0933 4.59766Z"
+												stroke="#BA0E23" stroke-width="1.9" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+
+									</div>
+									<div class="product-card__header-btn"><svg width="21" height="16"
+											viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M1.37891 10.6833C1.37891 10.0262 1.91162 9.49346 2.56876 9.49346H3.75862C4.41575 9.49346 4.94847 10.0262 4.94847 10.6833V13.6579C4.94847 14.3151 4.41575 14.8478 3.75862 14.8478H2.56876C1.91162 14.8478 1.37891 14.3151 1.37891 13.6579V10.6833Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M8.51804 2.94925C8.51804 2.29212 9.05075 1.7594 9.70789 1.7594H10.8977C11.5549 1.7594 12.0876 2.29212 12.0876 2.94925V13.6579C12.0876 14.3151 11.5549 14.8478 10.8977 14.8478H9.70789C9.05075 14.8478 8.51804 14.3151 8.51804 13.6579V2.94925Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+											<path
+												d="M15.6572 7.11375C15.6572 6.45661 16.1899 5.92389 16.847 5.92389H18.0369C18.694 5.92389 19.2267 6.45661 19.2267 7.11375V13.6579C19.2267 14.3151 18.694 14.8478 18.0369 14.8478H16.847C16.1899 14.8478 15.6572 14.3151 15.6572 13.6579V7.11375Z"
+												stroke="#BA0E23" stroke-width="1.78478" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__img move-slider__container">
+								<img src="/img/main/promo1.jpg" alt="">
+								<img src="/img/main/promo2.jpg" alt="">
+							</div>
+							<div class="product-card__info">
+								<div class="product-card__article">
+									Арт.: PA_MICRO_120
+								</div>
+								<div class="product-card__title">
+									Микродозинг пантерного мухомора
+								</div>
+								<div class="product-card__price-block">
+									<div class="product-card__price">
+										3 150 ₽<span> / шт.</span>
+									</div>
+									<div class="product-card__rate">
+										<svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M16.0267 18.8993L11.7755 16.2391L7.52422 18.8993C7.36978 18.9972 7.17056 18.9897 7.02184 18.8818C6.87354 18.7743 6.80552 18.5874 6.85027 18.4096L8.06652 13.5441L4.26809 10.3236C4.12766 10.206 4.07282 10.0147 4.12943 9.84051C4.18604 9.66589 4.34312 9.54347 4.52565 9.53074L9.48334 9.18454L11.3586 4.53315C11.4964 4.19354 12.0545 4.19354 12.1923 4.53315L14.0676 9.18454L19.0253 9.53074C19.2078 9.54347 19.3649 9.66589 19.4215 9.84051C19.4781 10.0147 19.4233 10.206 19.2828 10.3236L15.4844 13.5442L16.7006 18.4097C16.7454 18.5874 16.6774 18.7743 16.529 18.8818C16.3773 18.9921 16.1786 18.9945 16.0267 18.8993Z"
+												fill="#FFB800" />
+										</svg>
+										4.8 <span>(10 отзывов)</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__btn-block">
+								<div class="product-card__select">
+									<div class="product-card__select-title">
+										Количество капсул
+									</div>
+									<div class="product-card__tab-block tabs tabs_small">
+										<input type="radio" name="product-card-promo_article12"
+											id="product-card-catalog__article12_30" checked>
+										<label for="product-card-catalog__article12_30">30</label>
+										<input type="radio" name="product-card-promo_article12"
+											id="product-card-catalog__article12_60">
+										<label for="product-card-catalog__article12_60">60</label>
+										<input type="radio" name="product-card-promo_article12"
+											id="product-card-catalog__article12_120">
+										<label for="product-card-catalog__article12_120">120</label>
+									</div>
+								</div>
+								<div class="product-card__btn btn"> в корзину</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<section class="paragraph-catalog section_top section_grey">
+		<div class="container">
+			<div class="paragraph__title title">
+				Подробнее о мухоморах
+			</div>
+			<div class="paragraph__content subtitle_text text">
+				Мухомор красный (Amanita muscaria) – гриб, обладающий уникальным химическим составом и целебным
+				действием. Воздействие плодовых тел мухомора на человека хорошо изучено, поэтому его широко применяют в
+				фунготерапии. Эффективность такого лечения доказана проведенными клиническими исследованиями, которые
+				позволили включить гриб в Государственную Фармакопею.
+				<p>
+					В нашем интернет-магазине вы можете купить мухомор красный для наружного и внутреннего применения. В
+					каталоге есть различная расфасовка: плодовые сушеные тела, закрытые шляпки красного мухомора,
+					порошок,
+					капсулы. Мы занимаемся продажей грибов и все знаем об их целебных свойствах. Поэтому у нас можно не
+					только подобрать подходящий товар, но и получить профессиональную консультацию.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="paragraph-catalog  section_top section_grey">
+		<div class="container">
+			<div class="paragraph__title title_small">
+				Показания к применению
+			</div>
+			<div class="paragraph__content subtitle text">
+				Мухомор красный отличается уникальным химическим составом. Плодовое тело содержит иботеновую кислоту,
+				мусцимол, мускарин, полисахариды. Эти компоненты и определяют широкие целебные свойства гриба.
+				Психоактивное действие мухомора объясняется мусцимолом, который стимулирует нервную систему. Кроме того,
+				это вещество способно проникать через гематоэнцефалический барьер. Иботеновая кислота более токсична для
+				нервной системы, однако, в сушеных грибах ее содержание минимально. Под воздействием температуры она
+				разлагается с образованием мусцимола. Таким образом токсическое воздействие, обусловленное иботеновой
+				кислотой, снижается, при этом целебное влияние на нервную систему усиливается.
+				<ul class="subtitle_text">
+					<li class="text">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.875 7.875L5.625 16.125L1.5 12" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M22.5004 7.875L14.2504 16.125L12.0566 13.9313" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+						ОРЗ и ОРВИ. Так как гриб красный мухомор обладает противовоспалительным и иммуностимулирующим
+						действием, он эффективен при лечении вирусных инфекций.
+					</li>
+					<li class="text">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.875 7.875L5.625 16.125L1.5 12" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M22.5004 7.875L14.2504 16.125L12.0566 13.9313" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+						Кожные заболевания. Издревле плодовые тела мухомора применяли для лечения кожных болезней,
+						обморожений, ожогов, язв и гниющих ран. Он обладает противовоспалительным и ранозаживляющим
+						действием, поэтому позволяет ускорить излечение.
+					</li>
+					<li class="text">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.875 7.875L5.625 16.125L1.5 12" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M22.5004 7.875L14.2504 16.125L12.0566 13.9313" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+						Заболевания ЖКТ. Доказана эффективность внутреннего применения гриба при лечении гастритов, язв,
+						заболеваний двенадцатиперстной кишки.
+					</li>
+					<li class="text">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.875 7.875L5.625 16.125L1.5 12" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M22.5004 7.875L14.2504 16.125L12.0566 13.9313" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+						Заболевания сосудистой системы. При наружном применении мухомор выступает как венотоник,
+						благодаря чему позволяет усилить эффективность традиционного лечения болезней вен.
+					</li>
+					<li class="text">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.875 7.875L5.625 16.125L1.5 12" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M22.5004 7.875L14.2504 16.125L12.0566 13.9313" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+						Болезни нервной системы. Мухомор можно использовать для лечения повышенной тревожности,
+						нарушений сна, депрессии, эпилепсии, судорог. Он позволяет улучшить когнитивные функции мозга,
+						поэтому ученые исследуют эффективность препаратов мухомора при лечении болезни Альцгеймера.
+					</li>
+					<li class="text">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.875 7.875L5.625 16.125L1.5 12" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M22.5004 7.875L14.2504 16.125L12.0566 13.9313" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+						Косметология. Так как в состав гриба входят не только психоактивные компоненты, но и
+						полисахариды, настои и мази широко применяют в косметологии. Они позволяют бороться с
+						возрастными изменениями, улучшают регенерацию клетов, усиливают тургор кожи. Эффективны маски из
+						красного сушеного мухомора для лечения натоптышей, растяжек, целлюлита.
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</section>
+	<section class="paragraph-catalog section section_grey">
+		<div class="container">
+			<div class="paragraph__title title_small">
+				Подробнее о мухоморах
+			</div>
+			<div class="paragraph__content subtitle text">
+				Прежде чем купить красные или пантерные мухоморы,нужно ознакомиться с противопоказаниями:
+				<ul class="subtitle_text">
+					<li class="text"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.875 7.875L5.625 16.125L1.5 12" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M22.5004 7.875L14.2504 16.125L12.0566 13.9313" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+						Возрастные ограничения. Продажа и применение мухоморов осуществляется только лицам, достигшим 18
+						лет.</li>
+					<li class="text"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.875 7.875L5.625 16.125L1.5 12" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M22.5004 7.875L14.2504 16.125L12.0566 13.9313" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+						Хронические заболевания сердечно-сосудистой системы, гипертония, язва желудка, колиты, глаукома.
+					</li>
+					<li class="text"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.875 7.875L5.625 16.125L1.5 12" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M22.5004 7.875L14.2504 16.125L12.0566 13.9313" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+						Беременность, лактация.</li>
+					<li class="text"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.875 7.875L5.625 16.125L1.5 12" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M22.5004 7.875L14.2504 16.125L12.0566 13.9313" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+						Индивидуальная непереносимость компонентов продукта.</li>
+					<li class="text"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.875 7.875L5.625 16.125L1.5 12" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M22.5004 7.875L14.2504 16.125L12.0566 13.9313" stroke="#EE2D45" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+						Вещества, входящие в состав мухоморов, могут вызывать аллергию.</li>
+				</ul>
+				<p>
+					В нашем магазине вы можете купить сушеный красный мухомор в нужной вам форме и расфасовке. В отличие
+					от
+					аптеки, красные мухоморы в нашем магазине – это один из основных товарах, так как мы
+					специализируемся
+					именно на поставках целебных даров леса.
+				</p>
+
+				<p>
+					В каталоге вы найдете подробную информацию обо всех грибах: цена, форма, вес и объем упаковки,
+					наличие
+					на складе. Также мы публикуем полезную информацию, например, показания к применению грибов. Такая
+					информация и отзывы о мухоморах от реальных покупателях помогут вам сделать правильный выбор. Если
+					вы
+					сомневаетесь в том, какие грибы необходимы, проконсультируйтсь с нашим менеджером.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="support section section__white">
+		<div class="container">
+			<div class="support__title title">
+				Не нашли того, что искали?
+			</div>
+			<div class="support__text text subtitle">
+				Мы здесь, чтобы помочь! Наш специалист подскажет и проконсультирует вас абсолютно бесплатно!
+			</div>
+			<div class="support__btn btn">Оставить заявку</div>
+		</div>
+	</section>
+	<section class="about section section_grey">
+		<div class="container">
+			<div class="about__wrapper">
+				<div class="about__title title">Отзывы о нас</div>
+				<div class="text about__subtitle">
+					Мы ценим обратную связь, которая способствует нашему развитию в правильном направлении. Мы
+					внимательно
+					слушаем ваши отзывы, постоянно ищем новые возможности для улучшения и готовы корректировать наши
+					рабочие
+					процессы.
+				</div>
+				<div class="slider__wrapper">
+					<div class="slider__control">
+						<div class="about__btn-prev slider__btn-prev">
+							<svg width="21" height="16" viewBox="0 0 21 16" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M0.792997 8.70693L7.79298 15.707C7.9805 15.8945 8.23483 15.9998 8.50002 15.9998C8.76521 15.9998 9.01954 15.8945 9.20706 15.707C9.39458 15.5194 9.49993 15.2651 9.49993 14.9999C9.49993 14.7347 9.39458 14.4804 9.20706 14.2929L3.91408 8.9999H19.5C19.7652 8.9999 20.0196 8.89454 20.2071 8.70701C20.3946 8.51947 20.5 8.26512 20.5 7.99991C20.5 7.7347 20.3946 7.48035 20.2071 7.29282C20.0196 7.10528 19.7652 6.99993 19.5 6.99993H3.91408L9.20706 1.70694C9.39458 1.51942 9.49993 1.26509 9.49993 0.999904C9.49993 0.734713 9.39458 0.480383 9.20706 0.292865C9.01954 0.105347 8.76521 1.97583e-09 8.50002 0C8.23483 -1.97583e-09 7.9805 0.105347 7.79298 0.292865L0.792997 7.2929C0.700115 7.38572 0.626432 7.49594 0.57616 7.61725C0.52589 7.73857 0.500015 7.8686 0.500015 7.99991C0.500015 8.13123 0.52589 8.26126 0.57616 8.38257C0.626432 8.50388 0.700115 8.6141 0.792997 8.70693Z"
+									fill="black" />
+							</svg>
+						</div>
+						<div class="about__pagination slider__pagination"></div>
+						<div class="about__btn-next slider__btn-next">
+							<svg width="21" height="16" viewBox="0 0 21 16" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M0.792997 8.70693L7.79298 15.707C7.9805 15.8945 8.23483 15.9998 8.50002 15.9998C8.76521 15.9998 9.01954 15.8945 9.20706 15.707C9.39458 15.5194 9.49993 15.2651 9.49993 14.9999C9.49993 14.7347 9.39458 14.4804 9.20706 14.2929L3.91408 8.9999H19.5C19.7652 8.9999 20.0196 8.89454 20.2071 8.70701C20.3946 8.51947 20.5 8.26512 20.5 7.99991C20.5 7.7347 20.3946 7.48035 20.2071 7.29282C20.0196 7.10528 19.7652 6.99993 19.5 6.99993H3.91408L9.20706 1.70694C9.39458 1.51942 9.49993 1.26509 9.49993 0.999904C9.49993 0.734713 9.39458 0.480383 9.20706 0.292865C9.01954 0.105347 8.76521 1.97583e-09 8.50002 0C8.23483 -1.97583e-09 7.9805 0.105347 7.79298 0.292865L0.792997 7.2929C0.700115 7.38572 0.626432 7.49594 0.57616 7.61725C0.52589 7.73857 0.500015 7.8686 0.500015 7.99991C0.500015 8.13123 0.52589 8.26126 0.57616 8.38257C0.626432 8.50388 0.700115 8.6141 0.792997 8.70693Z"
+									fill="black" />
+							</svg>
+						</div>
+					</div>
+					<div class="swiper about__slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide about__slide">
+								<div class="about__slide-title">
+									<div class="about__slide-avatar">
+										<img src="/img/main/about1.png" alt="">
+									</div>
+									<div class="about__slide-title-info">
+										<div class="about__slide-name">Варвара Акимова</div>
+										<div class="about__slide-date">23 июля, 2023</div>
+									</div>
+								</div>
+								<div class="about__rating">
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+								</div>
+								<div class="about__slide-comment text">
+									Обратная связь на высоте! Сделали быстро и в срок. Однозначно рекомендую
+									пользоваться
+									услугами этой компании.
+								</div>
+							</div>
+							<div class="swiper-slide about__slide">
+								<div class="about__slide-title">
+									<div class="about__slide-avatar">
+										<img src="/img/main/about2.png" alt="">
+									</div>
+									<div class="about__slide-title-info">
+										<div class="about__slide-name">Пётр Осипов</div>
+										<div class="about__slide-date">23 июля, 2023</div>
+									</div>
+								</div>
+								<div class="about__rating">
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+								</div>
+								<div class="about__slide-comment text">
+									Обратная связь на высоте! Сделали быстро и в срок. Однозначно рекомендую
+									пользоваться
+									услугами этой компании.
+								</div>
+							</div>
+							<div class="swiper-slide about__slide">
+								<div class="about__slide-title">
+									<div class="about__slide-avatar">
+										<img src="/img/main/about3.png" alt="">
+									</div>
+									<div class="about__slide-title-info">
+										<div class="about__slide-name">Осип Петров</div>
+										<div class="about__slide-date">23 июля, 2023</div>
+									</div>
+								</div>
+								<div class="about__rating">
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+								</div>
+								<div class="about__slide-comment text">
+									Обратная связь на высоте! Сделали быстро и в срок. Однозначно рекомендую
+									пользоваться
+									услугами этой компании.
+								</div>
+							</div>
+							<div class="swiper-slide about__slide">
+								<div class="about__slide-title">
+									<div class="about__slide-avatar">
+										<img src="/img/main/about4.png" alt="">
+									</div>
+									<div class="about__slide-title-info">
+										<div class="about__slide-name">Алексей Авдеев</div>
+										<div class="about__slide-date">23 июля, 2023</div>
+									</div>
+								</div>
+								<div class="about__rating">
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+								</div>
+								<div class="about__slide-comment text">
+									Обратная связь на высоте! Сделали быстро и в срок. Однозначно рекомендую
+									пользоваться
+									услугами этой компании.
+								</div>
+							</div>
+							<div class="swiper-slide about__slide">
+								<div class="about__slide-title">
+									<div class="about__slide-avatar">
+										<img src="/img/main/about1.png" alt="">
+									</div>
+									<div class="about__slide-title-info">
+										<div class="about__slide-name">Варвара Акимова</div>
+										<div class="about__slide-date">23 июля, 2023</div>
+									</div>
+								</div>
+								<div class="about__rating">
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__rating-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__slide-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__slide-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+								</div>
+								<div class="about__slide-comment text">
+									Обратная связь на высоте! Сделали быстро и в срок. Однозначно рекомендую
+									пользоваться
+									услугами этой компании.
+								</div>
+							</div>
+							<div class="swiper-slide about__slide">
+								<div class="about__slide-title">
+									<div class="about__slide-avatar">
+										<img src="/img/main/about2.png" alt="">
+									</div>
+									<div class="about__slide-title-info">
+										<div class="about__slide-name">Пётр Осипов</div>
+										<div class="about__slide-date">23 июля, 2023</div>
+									</div>
+								</div>
+								<div class="about__rating">
+									<div class="about__slide-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__slide-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__slide-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__slide-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__slide-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+								</div>
+								<div class="about__slide-comment text">
+									Обратная связь на высоте! Сделали быстро и в срок. Однозначно рекомендую
+									пользоваться
+									услугами этой компании.
+								</div>
+							</div>
+							<div class="swiper-slide about__slide">
+								<div class="about__slide-title">
+									<div class="about__slide-avatar">
+										<img src="/img/main/about3.png" alt="">
+									</div>
+									<div class="about__slide-title-info">
+										<div class="about__slide-name">Осип Петров</div>
+										<div class="about__slide-date">23 июля, 2023</div>
+									</div>
+								</div>
+								<div class="about__rating">
+									<div class="about__slide-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__slide-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__slide-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__slide-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__slide-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+								</div>
+								<div class="about__slide-comment text">
+									Обратная связь на высоте! Сделали быстро и в срок. Однозначно рекомендую
+									пользоваться
+									услугами этой компании.
+								</div>
+							</div>
+							<div class="swiper-slide about__slide">
+								<div class="about__slide-title">
+									<div class="about__slide-avatar">
+										<img src="/img/main/about4.png" alt="">
+									</div>
+									<div class="about__slide-title-info">
+										<div class="about__slide-name">Алексей Авдеев</div>
+										<div class="about__slide-date">23 июля, 2023</div>
+									</div>
+								</div>
+								<div class="about__rating">
+									<div class="about__slide-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__slide-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__slide-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__slide-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+									<div class="about__slide-star active">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+											viewBox="0 0 17 17" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.01785 0.23037C8.23195 0.0804294 8.48699 0 8.74837 0C9.00975 0 9.26479 0.0804298 9.47888 0.23037C9.69007 0.378276 9.85132 0.586755 9.94142 0.828159L11.6574 5.14923L11.6625 5.16258C11.6641 5.16685 11.6669 5.17057 11.6705 5.17328C11.6742 5.17598 11.6786 5.17757 11.6831 5.17783L11.687 5.17806L16.2964 5.47494C17.4929 5.55264 17.9018 7.05045 17.031 7.77437L13.5003 10.7192L13.4982 10.7209C13.4903 10.7275 13.4843 10.7362 13.4811 10.746C13.478 10.7555 13.4775 10.7657 13.4798 10.7755L14.6197 15.2571C14.8957 16.3464 13.7194 17.3274 12.6962 16.682L12.6946 16.681L8.75711 14.181C8.75461 14.1794 8.75134 14.1783 8.74837 14.1783C8.7454 14.1783 8.74249 14.1791 8.73998 14.1807L8.739 14.1814L5.0761 16.5009C3.95361 17.2146 2.65656 16.13 2.96299 14.9289L4.01676 10.7763C4.01905 10.7665 4.01877 10.7555 4.01563 10.746C4.0124 10.7362 4.00648 10.7275 3.99854 10.7209L3.99648 10.7192L0.466244 7.77477C-0.404562 7.05085 0.0035274 5.55266 1.20006 5.47497L5.81363 5.17782C5.81817 5.17756 5.82255 5.17598 5.82621 5.17328C5.82987 5.17057 5.83266 5.16685 5.83424 5.16258L5.83937 5.14923L7.55532 0.828159C7.64541 0.586756 7.80666 0.378277 8.01785 0.23037Z"
+												fill="#EABB44" />
+										</svg>
+									</div>
+								</div>
+								<div class="about__slide-comment text">
+									Обратная связь на высоте! Сделали быстро и в срок. Однозначно рекомендую
+									пользоваться
+									услугами этой компании.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="about__btn btn_white">Все отзывы</a>
+			</div>
+		</div>
+	</section>
+
+
+
+	<footer class="footer section section_dark">
+		<div class="footer__top">
+			<div class="container">
+				<div class="footer__top-wrapper">
+					<div class="footer__logo-block">
+						<div class="footer__logo">
+							<img src="img/header-logo_mobile.png" alt="">
+						</div>
+						<div class="footer__pay">
+							<div class="footer__pay-title">
+								Способы оплаты:
+							</div>
+							<div class="footer__pay-systems">
+								<div class="footer__pay-item">
+									<img src="img/pay-system1.png" alt="">
+								</div>
+								<div class="footer__pay-item">
+									<img src="img/pay-system2.png" alt="">
+								</div>
+								<div class="footer__pay-item">
+									<img src="img/pay-system3.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__content">
+						<div class="footer__content-section">
+							<div class="footer__content-title">
+								Компания
+							</div>
+							<ul class="footer__conent-list">
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Каталог товаров</a></li>
+								<li><a href="#">Доставка и оплата</a></li>
+								<li><a href="#">Акции</a></li>
+								<li><a href="#">Блог</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="footer__content-section">
+							<div class="footer__content-title">
+								Каталог товаров
+							</div>
+							<ul class="footer__conent-list">
+								<li><a href="#">Мухоморы в капсулах</a></li>
+								<li><a href="#">Мухоморы в вакуумных упаковках</a></li>
+							</ul>
+						</div>
+						<div class="footer__content-section footer__content-section_contact">
+							<div class="footer__content-title">
+								Контакты
+							</div>
+							<div class="footer__contacts">
+								<div class="footer__contacts-section">
+									<div class="footer__contacts-title">
+										Время работы:
+									</div>
+									<ul class="footer__contacts-list">
+										<li>Пн - Пт: 09:00 - 21:00</li>
+										<li>Сб - Вс: 10:00 - 16:00</li>
+									</ul>
+								</div>
+								<div class="footer__contacts-section">
+									<div class="footer__contacts-title">
+										Адрес:
+									</div>
+									<ul class="footer__contacts-list footer__contacts-addres">
+										<li>ул. Стахановская, дом 8, Москва, Россия</li>
+									</ul>
+								</div>
+								<div class="footer__contacts-section">
+									<div class="footer__contacts-title">
+										E-mail:
+									</div>
+									<ul class="footer__contacts-list">
+										<li><a href="mailto:amanita74@mail.ru">Amanita74@mail.ru</a></li>
+										<li><a href="mailto:amanita74@gmail.com">Amanita74@gmail.com</a></li>
+									</ul>
+								</div>
+								<div class="footer__contacts-section">
+									<div class="footer__contacts-title">
+										E-mail:
+									</div>
+									<ul class="footer__contacts-list">
+										<li><a href="tel:+7 (902) 224-55-62">+7 (902) 224-55-62</a></li>
+										<li><a href="tel:+7 (902) 224-55-62">+7 (902) 224-55-62</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="footer__bottom-wrapper">
+					<div class="footer__bottom-left">
+						ИП Телегин Сергей Владимирович <br>
+						Юридический адрес организации:454010, Россия, Челябинская обл, г. Челябинск<br>
+						ИНН: 744916271064<br>
+						ОГРНИП: 319745600052301<br>
+						Декларация о соответсвии продукции:ЕАЭС N RU Д-RU.НВ56.В.14859/20<br>
+						Производитель: ИП Лейко Н.И.
+					</div>
+					<div class="footer__bottom-right">
+						<div class="footer__social-line">
+							<a href="#" class="footer__social-item footer__social_vk">
+								<svg width="19" height="13" viewBox="0 0 19 13" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M0.425781 0.899902H3.51938C3.52823 3.14639 4.37709 7.84273 7.70171 8.65616V0.899902H10.636V5.31901C11.676 5.17562 13.9951 4.09105 14.9511 0.899902H17.8588C17.7703 1.99056 16.8577 4.63594 13.9155 6.49223C14.3403 6.71384 17.341 7.99134 18.5758 12.0715H15.3494C14.9511 10.8331 13.4508 8.3068 10.636 8.10866V12.0715C7.23258 12.3626 0.425781 10.5359 0.425781 0.899902Z"
+										fill="white" />
+								</svg>
+							</a>
+							<a href="#" class="footer__social-item footer__social_youtube">
+								<svg width="19" height="13" viewBox="0 0 19 13" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M18.1464 1.19889C17.4693 0.418446 16.2193 0.100098 13.8321 0.100098H5.16631C2.72442 0.100098 1.45322 0.438981 0.778716 1.26988C0.121094 2.08001 0.121094 3.27367 0.121094 4.92572V8.07453C0.121094 11.2751 0.901359 12.9001 5.16631 12.9001H13.8321C15.9023 12.9001 17.0495 12.6192 17.7916 11.9304C18.5527 11.2242 18.8775 10.071 18.8775 8.07453V4.92572C18.8775 3.18349 18.8266 1.98279 18.1464 1.19889ZM12.1627 6.93485L8.22765 8.92913C8.13968 8.97372 8.04348 8.99584 7.9474 8.99584C7.83861 8.99584 7.73006 8.96744 7.63392 8.911C7.45289 8.80463 7.34235 8.61436 7.34235 8.40913V4.43336C7.34235 4.22848 7.45259 4.03838 7.63326 3.93195C7.81398 3.82552 8.03876 3.81825 8.22626 3.91271L12.1613 5.89414C12.3616 5.99494 12.4873 6.19536 12.4876 6.41403C12.4878 6.63287 12.3626 6.83358 12.1627 6.93485Z"
+										fill="white" />
+								</svg>
+							</a>
+							<a href="#" class="footer__social-item footer__social_dzen">
+								<svg width="32" height="31" viewBox="0 0 32 31" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M15.8327 0.299805C15.8327 13.4586 13.123 15.3016 0.800781 15.3016V15.6583H31.2008V15.3016C19.0329 15.3016 16.2085 13.4586 16.2085 0.299805H15.8327Z"
+										fill="white" />
+									<path
+										d="M15.8327 30.6998C15.8327 17.541 13.123 15.698 0.800781 15.698V15.3413H31.2008V15.698C19.0329 15.698 16.2085 17.541 16.2085 30.6998H15.8327Z"
+										fill="white" />
+								</svg>
+							</a>
+							<a href="#" class="footer__social-item footer__social_taplink">
+								<svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M15.8178 7.41627C15.8178 6.93427 15.4271 6.54354 14.9451 6.54354H5.05415C4.57216 6.54354 4.18143 6.93427 4.18143 7.41627C4.18143 7.89826 4.57216 8.28899 5.05415 8.28899H14.9451C15.4271 8.28899 15.8178 7.89826 15.8178 7.41627Z"
+										fill="white" />
+									<path
+										d="M15.8178 10.4999C15.8178 10.0179 15.4271 9.62718 14.9451 9.62718H5.05415C4.57216 9.62718 4.18143 10.0179 4.18143 10.4999C4.18143 10.9819 4.57216 11.3726 5.05415 11.3726H14.9451C15.4271 11.3726 15.8178 10.9819 15.8178 10.4999Z"
+										fill="white" />
+									<path
+										d="M15.8178 13.5835C15.8178 13.1015 15.4271 12.7108 14.9451 12.7108H5.05415C4.57216 12.7108 4.18143 13.1015 4.18143 13.5835C4.18143 14.0655 4.57216 14.4563 5.05415 14.4563H14.9451C15.4271 14.4563 15.8178 14.0655 15.8178 13.5835Z"
+										fill="white" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M9.99961 20.0999C4.69767 20.0999 0.399609 15.8018 0.399609 10.4999C0.399609 5.19797 4.69767 0.899902 9.99961 0.899902C15.3015 0.899902 19.5996 5.19797 19.5996 10.4999C19.5996 15.8018 15.3015 20.0999 9.99961 20.0999ZM9.99961 18.7617C5.43673 18.7617 1.73779 15.0628 1.73779 10.4999C1.73779 5.93703 5.43673 2.23808 9.99961 2.23808C14.5625 2.23808 18.2614 5.93703 18.2614 10.4999C18.2614 15.0628 14.5625 18.7617 9.99961 18.7617ZM15.8178 7.41627C15.8178 6.93427 15.4271 6.54354 14.9451 6.54354H5.05415C4.57216 6.54354 4.18143 6.93427 4.18143 7.41627C4.18143 7.89826 4.57216 8.28899 5.05415 8.28899H14.9451C15.4271 8.28899 15.8178 7.89826 15.8178 7.41627ZM15.8178 10.4999C15.8178 10.0179 15.4271 9.62718 14.9451 9.62718H5.05415C4.57216 9.62718 4.18143 10.0179 4.18143 10.4999C4.18143 10.9819 4.57216 11.3726 5.05415 11.3726H14.9451C15.4271 11.3726 15.8178 10.9819 15.8178 10.4999ZM15.8178 13.5835C15.8178 13.1015 15.4271 12.7108 14.9451 12.7108H5.05415C4.57216 12.7108 4.18143 13.1015 4.18143 13.5835C4.18143 14.0655 4.57216 14.4563 5.05415 14.4563H14.9451C15.4271 14.4563 15.8178 14.0655 15.8178 13.5835Z"
+										fill="white" />
+								</svg>
+							</a>
+						</div>
+						<div class="footer__rights">Copyright все права защищены</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+<div class="modal">
+	<div class="modal__window">
+		<div class="modal__title title">
+			Заполните анкету
+		</div>
+		<div class="modal__subtitle text">
+			Заполните анкету, и мы свяжемся с вами в ближайшее время
+		</div>
+		<form action="#" class="modal__form">
+			<div class="modal__input-block">
+				<div class="modal__input-title">
+					Имя*
+				</div>
+				<input type="text" placeholder="Введите ваше имя">
+			</div>
+			<div class="modal__input-block">
+				<div class="modal__input-title">
+					Номер телефона*
+				</div>
+				<input type="text" placeholder="Введите номер телефона">
+			</div>
+		</form>
+		<div class="modal__btn btn">
+			Отправить заявку
+		</div>
+	</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/js/slider.js"></script>
+<script src="/js/accordeon.js"></script>
+<script src="/js/move-slider.js"></script>
+<script src="/js/catalog.js"></script>
+<script src="/js/main.js"></script>
+
+</html>

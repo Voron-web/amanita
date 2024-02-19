@@ -2,7 +2,7 @@
     &__container {
         position: relative;
         width: 100%;
-        height: 100%;
+        // height: 100%;
         border: none;
         & img {
             height: 100%;
@@ -23,7 +23,7 @@
         padding: 0 16px;
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: 1px;
         width: 100%;
         z-index: 2;
         display: flex;
