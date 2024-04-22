@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="2170.5601"
+   height="201.35173"
+   viewBox="0 0 2170.5601 201.35173"
+   sodipodi:docname="logo_amnita.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.24615294"
+     inkscape:cx="1911.4133"
+     inkscape:cy="113.75042"
+     inkscape:window-width="1920"
+     inkscape:window-height="1000"
+     inkscape:window-x="3200"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="group-R5">
+    <inkscape:page
+       x="0"
+       y="0"
+       inkscape:label="1"
+       id="page1"
+       width="2170.5601"
+       height="201.35173"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     id="g1"
+     inkscape:groupmode="layer"
+     inkscape:label="1"
+     transform="translate(0,-45.006672)">
+    <g
+       id="group-R5">
+      <path
+         id="path8"
+         style="fill:#100f0d;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,314.16)"
+         d="m 10836.7,798.461 v 336.259 h 1041 V 798.461 Z m 803.4,1220.189 686.6,-1510.138 h -445 l -575.9,1332.948 h 120.8 L 10848.7,508.512 h -444.9 l 686.6,1510.138 h 549.7 M 9610.42,1835.43 h 418.78 V 508.512 h -418.78 z m -575.86,183.22 H 10605.1 V 1648.17 H 9034.56 v 370.48 m -595.98,0 h 416.8 V 508.512 h -416.8 V 2018.65 M 7880.86,800.48 7752,774.301 V 2018.65 h 404.72 V 508.512 h -525.53 l -871.86,1242.348 126.85,26.17 V 508.512 H 6481.47 V 2018.65 h 539.62 L 7880.86,800.48 M 4848.53,798.461 V 1134.72 H 5889.52 V 798.461 Z M 5651.92,2018.65 6338.54,508.512 H 5893.55 L 5317.68,1841.46 h 120.81 L 4860.61,508.512 h -444.99 l 686.61,1510.138 h 549.69 m -1379.25,0 V 508.512 H 3876.01 V 1869.66 l 88.59,-10.07 -583.92,-1351.078 h -422.84 l -585.94,1347.048 90.61,10.07 V 508.512 H 2065.85 V 2018.65 h 644.33 L 3251.82,721.941 h -161.09 l 537.61,1296.709 h 644.33 M 432.91,798.461 V 1134.72 H 1473.9 V 798.461 Z M 1236.3,2018.65 1922.92,508.512 H 1477.93 L 902.063,1841.46 H 1022.87 L 444.988,508.512 H 0 L 686.609,2018.65 H 1236.3" />
+      <path
+         id="path9"
+         d="m 14618,2006.59 v -316.13 c -62.4,-74.5 -219.4,-235.58 -372.5,-436.93 -229.5,-304.05 -243.6,-487.28 -243.6,-726.889 v -18.129 h -537.6 v 189.269 c 0,237.61 86.6,382.579 390.6,670.519 219.5,209.41 283.9,267.8 294,300.02 h -845.7 V 1360.25 H 12828 v 646.34 h 1790"
+         style="fill:#e01b2d;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,314.16)" />
+      <path
+         id="path10"
+         d="m 15512,1638.11 -549.7,-471.17 h 549.7 z m -42.2,374.52 h 505.4 v -845.69 h 304 V 818.602 h -304 V 508.512 H 15512 v 310.09 h -1097.4 v 283.908 l 1055.2,910.12"
+         style="fill:#e01b2d;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,314.16)" />
+    </g>
+  </g>
+</svg>

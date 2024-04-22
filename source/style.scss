@@ -411,8 +411,29 @@ body {
 
     &__logo {
         height: 50px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
         & img {
             height: 100%;
+        }
+        & #logo_main {
+            width: auto;
+            height: 22px;
+        }
+        & #logo_text {
+            width: auto;
+            height: 46px;
+        }
+    }
+    &__logo_white {
+        & #logo_text {
+            & path {
+                fill: #eff0f2 !important;
+            }
+        }
+        & #logo_name {
+            fill: #eff0f2 !important;
         }
     }
 
@@ -561,6 +582,10 @@ body {
     & svg {
         height: 14px;
     }
+}
+.burger__content,
+.burger__title {
+    display: none;
 }
 
 .city-select {

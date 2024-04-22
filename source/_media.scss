@@ -446,14 +446,132 @@
 }
 @media (max-width: 850px) {
     .burger {
+        width: 320px;
+        padding: 20px;
+        height: 100vh;
         position: fixed;
         top: 0;
         right: 0;
         transform: translate(110%, 0);
+        z-index: 50;
+        background: #fff;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        transition: transform 0.4s;
         &.active {
             transform: translate(0, 0);
         }
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 27px;
+            & img {
+                height: 26px;
+            }
+        }
+        &__content {
+            display: block;
+            margin-top: 40px;
+        }
+
+        &__menu {
+        }
+
+        &__menu-item {
+            font-size: 14px;
+            line-height: 130%;
+            margin-bottom: 22px;
+        }
+        &__catalog-title,
+        &__menu-item-title {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            cursor: pointer;
+        }
+        &__catalog-btn,
+        &__menu-item-btn {
+            width: 0;
+            height: 0;
+            border: 5px solid transparent;
+            border-bottom: 6px solid #878a95;
+            // position: absolute;
+            // right: 30px;
+            // top: 15px;
+            transform-origin: center 9px;
+            transform: translate(0, -4px);
+
+            &.hide {
+                transform: translate(0, -4px) rotate(180deg);
+                border-bottom: 6px solid #ee2d45;
+            }
+        }
+        &__catalog-wrapper,
+        &__menu-item-wrapper {
+            margin: 10px 0 0 0;
+            padding: 0 10px;
+            // padding-bottom: 5px;
+            overflow: hidden;
+            // border-bottom: 1px solid rgba(221, 224, 237, 0.5);
+            &.hide {
+                margin: 0;
+                max-height: 0px;
+                padding: 0;
+            }
+        }
+
+        &__catalog {
+        }
+
+        &__catalog-item {
+        }
+
+        &__catalog-title {
+            height: 42px;
+            justify-content: space-between;
+        }
+
+        &__catalog-btn {
+        }
+
+        &__catalog-wrapper {
+            border-bottom: 1px solid rgba(221, 224, 237, 0.5);
+
+            & a {
+                margin-bottom: 16px;
+                display: block;
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+        &__contacts {
+            margin-top: 56px;
+            text-align: center;
+            & a {
+                margin-top: 6px;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 130%;
+            }
+        }
+        &__contacts-info {
+            font-size: 12px;
+            font-weight: 130%;
+            color: #00000080;
+        }
+        &__btn {
+            margin-top: 30px;
+            height: 50px;
+            width: 100%;
+        }
+        & .header__btns-line {
+            justify-content: center;
+            margin: 40px 0 0 0;
+            height: 27px;
+        }
     }
+
     .header {
         &__main {
             height: 42px;
@@ -488,7 +606,38 @@
             align-items: center;
             justify-content: center;
         }
+        &__main-city-select {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            width: 100%;
+            & svg path {
+                fill: #000;
+            }
+        }
     }
+    .city-select {
+        &__title {
+            color: #000;
+        }
+        &__list {
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+        }
+        & a {
+            color: rgba(0, 0, 0, 0.6);
+            &.select {
+                color: #000;
+                font-weight: 500;
+            }
+        }
+        & li {
+            padding: 10px 5px 10px 18px;
+            border-top: 1px solid rgba(0, 0, 0, 0.3);
+            &:first-child {
+                border: none;
+            }
+        }
+    }
+
     .first-screen {
         height: 520px;
         & img {

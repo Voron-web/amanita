@@ -50,7 +50,6 @@ class SelectList {
             return element.checked
         })
         const titleText = Array.from(this.list.querySelectorAll('label')).find((element) => { return element.getAttribute('for') == checkedElement.id }).textContent
-        console.log(titleText);
         if (this.title) {
             this.title.textContent = titleText
         }
